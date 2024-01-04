@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Carousel() {
   return (
-    <>
+    <div className="container">
       <div
         id="carouselExampleIndicators"
-        className="carousel slide"
+        className="carousel slide my-4"
         data-bs-ride="true"
       >
         <div className="carousel-indicators">
@@ -39,6 +39,6 @@ export default function Carousel() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
