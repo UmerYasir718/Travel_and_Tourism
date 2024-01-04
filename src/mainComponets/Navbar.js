@@ -27,11 +27,7 @@ export default function Navbar() {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <NavLink
-                    className="nav-link active"
-                    aria-current="page"
-                    to="/"
-                  >
+                  <NavLink className="nav-link active" to="/">
                     Visa
                   </NavLink>
                 </li>
@@ -41,10 +37,14 @@ export default function Navbar() {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link">Offers</NavLink>
+                  <NavLink className="nav-link" to="/">
+                    Offers
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link">Packages</NavLink>
+                  <NavLink className="nav-link" to="/">
+                    Packages
+                  </NavLink>
                 </li>
               </ul>
 <<<<<<< HEAD
