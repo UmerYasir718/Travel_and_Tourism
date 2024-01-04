@@ -42,6 +42,7 @@ export default function Navbar() {
                   <a className="nav-link">Packages</a>
                 </li>
               </ul>
+<<<<<<< HEAD
               <form className="d-flex" role="search ">
                 <button className="btn btn-primary btnFreeConsultancy">
                   {" "}
@@ -49,6 +50,15 @@ export default function Navbar() {
                 </button>
                 <button className="btn btn-primary btn "> My Acount </button>
               </form>
+=======
+              <div className="d-flex" role="search ">
+                <button className="btn btn-primary mx-2 ">
+                  {" "}
+                  Free Consultancy{" "}
+                </button>
+                <button className="btn btn-primary"> My Acount </button>
+              </div>
+>>>>>>> c21be76 (Umer)
             </div>
           </div>
         </nav>
