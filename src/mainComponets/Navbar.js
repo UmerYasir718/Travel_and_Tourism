@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "../App.css";
 export default function Navbar() {
   return (
@@ -6,9 +7,9 @@ export default function Navbar() {
       <div className="navbarImg">
         <nav className="navbar navbar-expand-lg navbar-dark">
           <div className="container-fluid">
-            <a className="navbar-brand" to="#">
+            <NavLink className="navbar-brand" to="/">
               Navbar
-            </a>
+            </NavLink>
             <button
               className="navbar-toggler"
               type="button"
@@ -26,23 +27,27 @@ export default function Navbar() {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" to="#">
+                  <NavLink
+                    className="nav-link active"
+                    aria-current="page"
+                    to="/"
+                  >
                     Visa
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" to="#">
+                  <NavLink className="nav-link" to="/">
                     Flight
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">Offers</a>
+                  <NavLink className="nav-link">Offers</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link">Packages</a>
+                  <NavLink className="nav-link">Packages</NavLink>
                 </li>
               </ul>
-              <div className="d-flex" role="search ">
+              <div className="d-flex">
                 <button className="btn btn-danger p-2 rounded btn-lg  mx-2 ">
                   Free Consultancy
                 </button>
