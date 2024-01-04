@@ -44,8 +44,7 @@ export default function Navbar() {
               </ul>
               <div className="d-flex" role="search ">
                 <button className="btn btn-primary mx-2 ">
-                  {" "}
-                  Free Consultancy{" "}
+                  Free Consultancy
                 </button>
                 <button className="btn btn-primary"> My Acount </button>
               </div>
