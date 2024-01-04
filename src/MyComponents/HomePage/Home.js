@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../../mainComponets/Navbar";
 import Carousel from "./Carousel";
+import NavHome from "./NavHome";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
+      <NavHome />
       <Carousel />
     </div>
   );

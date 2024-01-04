@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
-/* navebar */
-.navbarImg{
- background-image: url(../public/headerBg.jpg);
- /* background-image: url(https://blog.mktgessentials.com/hubfs/online-store-small-business-blog.png); */
+
+/*------------------------------------------ Navbar -------------------------------------*/
+.navbarImg {
+  background-image: url(../public/Slider.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,21 +15,54 @@
   position: relative;
   width: 100%;
 }
+
 .navbar {
   /* background-color: rgba(0,0,0,.5); */
   box-sizing: border-box;
   left: 0;
   padding: 15px;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 1000;
 }
-/* .btnFreeConsultancy{
-  background-color: red;
-  color: white;
-  padding: 3px;
-  width: 200px;
-  height: 40px;
-} */
 
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.nav-link {
+  font-size: 20px;
+  color: white;
+}
+
+.nav-link:hover {
+  font-size: 20px;
+  color: black;
+  background-color: rgb(210, 192, 192);
+  border-radius: 10px;
+}
+
+.active {
+  background-color: red;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border-radius: 10px;
+}
+
+.navBtn {
+  background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}

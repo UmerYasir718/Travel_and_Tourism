@@ -5,7 +5,7 @@ export default function Carousel() {
     <div className="container">
       <div
         id="carouselExampleIndicators"
-        className="carousel slide my-4"
+        className="carousel slide my-4 rounded "
         data-bs-ride="true"
       >
         <div className="carousel-indicators">
@@ -32,10 +32,20 @@ export default function Carousel() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src="sliderImg1.jpg" className="d-block w-100" alt="..." />
+            <img
+              src="sliderImg1.jpg"
+              className="d-block w-100"
+              data-bs-interval="2000"
+              alt="..."
+            />
           </div>
           <div className="carousel-item">
-            <img src="sliderImg2.jpg" className="d-block w-100" alt="..." />
+            <img
+              src="sliderImg2.jpg"
+              className="d-block w-100"
+              data-bs-interval="10000"
+              alt="..."
+            />
           </div>
         </div>
       </div>
