@@ -1,7 +1,5 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./mainComponets/Navbar";
-
 function App() {
   return (
     <>
@@ -12,6 +10,7 @@ function App() {
       </Router>
     </>
   );
+  return <></>;
 }
 
 export default App;
