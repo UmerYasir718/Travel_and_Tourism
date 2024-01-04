@@ -47,11 +47,13 @@ export default function Navbar() {
                   <NavLink className="nav-link">Packages</NavLink>
                 </li>
               </ul>
-              <div className="d-flex">
-                <button className="btn btn-primary mx-2 ">
+              <div className="d-flex" role="search ">
+                <button className="btn btn-danger p-2 rounded btn-lg  mx-2 ">
                   Free Consultancy
                 </button>
-                <button className="btn btn-primary"> My Acount </button>
+                <button className="btn btn-danger p-2 rounded                              btn-lg ">
+                  My Acount
+                </button>
               </div>
             </div>
           </div>
