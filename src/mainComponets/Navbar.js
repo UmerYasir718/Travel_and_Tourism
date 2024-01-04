@@ -47,7 +47,7 @@ export default function Navbar() {
                   Free Consultancy
                 </button>
                 <button className="btn btn-primary"> My Acount </button>
-              </form>
+              </div>
             </div>
           </div>
         </nav>
