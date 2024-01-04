@@ -68,3 +68,31 @@
   border-radius: 5px;
   color: white;
 }
+/* -----------LowerFooter------------------ */
+.socialIcons a{
+display: inline-flex;
+border: 3px solid gray;
+border-radius: 50px;
+color: gray;
+background: none;
+width: 55px;
+height: 55px;
+align-items: center;
+justify-content: center;
+font-size: 25px;
+margin: 5px;
+}
+.socialIcons a:hover{
+  display: inline-flex;
+  border: 3px solid red;
+  border-radius: 50px;
+  color: red;
+  background: none;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 5px;
+  }
+  
