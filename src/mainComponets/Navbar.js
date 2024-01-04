@@ -57,10 +57,12 @@ export default function Navbar() {
               </form>
 =======
               <div className="d-flex" role="search ">
-                <button className="btn btn-primary mx-2 ">
+                <button className="btn btn-danger p-2 rounded btn-lg  mx-2 ">
                   Free Consultancy
                 </button>
-                <button className="btn btn-primary"> My Acount </button>
+                <button className="btn btn-danger p-2 rounded                              btn-lg ">
+                  My Acount
+                </button>
               </div>
 >>>>>>> c21be76 (Umer)
             </div>
