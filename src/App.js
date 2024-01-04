@@ -1,11 +1,16 @@
-import logo from "./logo.svg";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./mainComponets/Navbar";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Navbar />}></Route>
+          {/* <Navbar /> */}
+        </Routes>
+      </Router>
     </>
   );
 }
