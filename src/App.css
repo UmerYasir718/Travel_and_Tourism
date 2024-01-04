@@ -28,7 +28,7 @@
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
@@ -42,7 +42,7 @@
 
 .nav-link {
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .nav-link:hover {
@@ -58,6 +58,8 @@
   font-size: 20px;
   color: white;
   border-radius: 10px;
+  width: 100%;
+  padding: 3px;
 }
 
 .navBtn {
