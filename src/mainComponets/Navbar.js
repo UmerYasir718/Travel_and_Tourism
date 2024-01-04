@@ -43,11 +43,8 @@ export default function Navbar() {
                 </li>
               </ul>
               <form className="d-flex" role="search ">
-                <button className="btn btn-primary btnFreeConsultancy">
-                  {" "}
-                  Free Consultancy{" "}
-                </button>
-                <button className="btn btn-primary btn "> My Acount </button>
+                <button className="btn btn-primary"> Free Consultancy </button>
+                <button className="btn btn-primary"> My Acount </button>
               </form>
             </div>
           </div>
