@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbarImg{
+ background-image: url(../public/headerBg.jpg);
+ /* background-image: url(https://blog.mktgessentials.com/hubfs/online-store-small-business-blog.png); */
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 850px;
+  max-height: 850px;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+.navbar {
+  /* background-color: rgba(0,0,0,.5); */
+  box-sizing: border-box;
+  left: 0;
+  padding: 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
