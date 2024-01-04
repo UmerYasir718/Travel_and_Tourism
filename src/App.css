@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+/* navebar */
 .navbarImg{
  background-image: url(../public/headerBg.jpg);
  /* background-image: url(https://blog.mktgessentials.com/hubfs/online-store-small-business-blog.png); */
@@ -24,4 +25,11 @@
   width: 100%;
   z-index: 1;
 }
+/* .btnFreeConsultancy{
+  background-color: red;
+  color: white;
+  padding: 3px;
+  width: 200px;
+  height: 40px;
+} */
 
