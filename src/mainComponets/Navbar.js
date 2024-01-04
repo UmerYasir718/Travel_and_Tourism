@@ -60,7 +60,7 @@ export default function Navbar() {
                 <button className="btn btn-danger p-2 rounded btn-lg  mx-2 ">
                   Free Consultancy
                 </button>
-                <button className="btn btn-danger p-2 rounded                              btn-lg ">
+                <button className="btn btn-danger p-2 rounded btn-lg ">
                   My Acount
                 </button>
               </div>
