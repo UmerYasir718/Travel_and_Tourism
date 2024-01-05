@@ -3,6 +3,7 @@ import Carousel from "./Carousel";
 import NavHome from "./NavHome";
 import TopDestination from "./TopDestination";
 import LowerFooter from "../../mainComponets/LowerFooter";
+import UpperFooter from "../../mainComponets/UpperFooter";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <NavHome />
       <Carousel />
       <TopDestination />
+      <UpperFooter />
       <LowerFooter />
     </div>
   );

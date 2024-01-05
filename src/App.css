@@ -5,11 +5,11 @@
 
 /*------------------------------------------ Navbar -------------------------------------*/
 .navbarImg {
-  background-image: url(../public/Slider.jpg);
+  background-image: url(../public/UpperFooter2.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 850px;
+  height: 80vh;
   max-height: 850px;
   max-width: 100%;
   position: relative;
@@ -110,5 +110,15 @@ margin: 5px;
     }
     .headerSection2 a:hover{
       color: #FF0000;
-      }
+    }
+    /* ----------------UpperFooter------------ */
+    .UpperFooter{
+      background: url("../public/UpperFooter.jpg");
+      background-position: 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 180px;
+    }
+
+
   
