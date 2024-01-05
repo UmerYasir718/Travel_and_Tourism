@@ -13,7 +13,7 @@ export default function Carousel() {
             type="button"
             data-bs-target="#carouselExampleIndicators"
             data-bs-slide-to="0"
-            className="active"
+            className="active "
             aria-current="true"
             aria-label="Slide 1"
           ></button>
@@ -35,7 +35,7 @@ export default function Carousel() {
             <img
               src="sliderImg1.jpg"
               className="d-block w-100"
-              data-bs-interval="2000"
+              data-bs-interval="20"
               alt="..."
             />
           </div>
