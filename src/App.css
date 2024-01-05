@@ -95,4 +95,20 @@ margin: 5px;
   font-size: 25px;
   margin: 5px;
   }
+  .headerSection2 h4{
+    color: #FF0000;
+  }
+  .headerSection2 ul{
+  list-style-type: none;
+  padding-inline: 0;
+  font-size: 20px;
+  }
+  .headerSection2 a{
+    font-size: 20px;
+    text-decoration: none;
+    color: gray;
+    }
+    .headerSection2 a:hover{
+      color: #FF0000;
+      }
   
