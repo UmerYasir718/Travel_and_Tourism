@@ -28,7 +28,7 @@
 }
 
 .navbar.scrolled {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
   color: white;
 }
 
@@ -39,6 +39,10 @@
   align-items: center;
   margin: auto;
 }
+
+/* .navbar-brand {
+  color: black;
+} */
 
 .nav-link {
   font-size: 20px;
@@ -52,7 +56,7 @@
   border-radius: 10px;
 }
 
-.active {
+nav .active {
   background-color: red;
   font-weight: bold;
   font-size: 20px;
@@ -68,21 +72,40 @@
   border-radius: 5px;
   color: white;
 }
-/* -----------LowerFooter------------------ */
-.socialIcons a{
-display: inline-flex;
-border: 3px solid gray;
-border-radius: 50px;
-color: gray;
-background: none;
-width: 55px;
-height: 55px;
-align-items: center;
-justify-content: center;
-font-size: 25px;
-margin: 5px;
+
+/*------------------------------------------ TopDestination -------------------------------------*/
+/* .card-img {
+  width: 16vw;
 }
-.socialIcons a:hover{
+
+.card-img-large {
+  width: 33vw;
+} */
+.card-detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-detail-2 {
+  margin-left: auto;
+}
+
+/* -----------LowerFooter------------------ */
+.socialIcons a {
+  display: inline-flex;
+  border: 3px solid gray;
+  border-radius: 50px;
+  color: gray;
+  background: none;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.socialIcons a:hover {
   display: inline-flex;
   border: 3px solid red;
   border-radius: 50px;
@@ -94,31 +117,33 @@ margin: 5px;
   justify-content: center;
   font-size: 25px;
   margin: 5px;
-  }
-  .headerSection2 h4{
-    color: #FF0000;
-  }
-  .headerSection2 ul{
+}
+
+.headerSection2 h4 {
+  color: #FF0000;
+}
+
+.headerSection2 ul {
   list-style-type: none;
   padding-inline: 0;
   font-size: 20px;
-  }
-  .headerSection2 a{
-    font-size: 20px;
-    text-decoration: none;
-    color: gray;
-    }
-    .headerSection2 a:hover{
-      color: #FF0000;
-    }
-    /* ----------------UpperFooter------------ */
-    .UpperFooter{
-      background: url("../public/UpperFooter.jpg");
-      background-position: 50%;
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 180px;
-    }
+}
 
+.headerSection2 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: gray;
+}
 
-  
+.headerSection2 a:hover {
+  color: #FF0000;
+}
+
+/* ----------------UpperFooter------------ */
+.UpperFooter {
+  background: url("../public/UpperFooter.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 180px;
+}
