@@ -7,6 +7,7 @@ export default function Carousel() {
         id="carouselExampleIndicators"
         className="carousel slide my-4 rounded "
         data-bs-ride="true"
+        style={{ position: "relative" }}
       >
         <div className="carousel-indicators">
           <button
