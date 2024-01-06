@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 export default function LowerFooter() {
   return (
     <>
@@ -11,31 +11,31 @@ export default function LowerFooter() {
               Call us: <b>0301-1234567</b>
             </h5>
             <div className="socialIcons my-3">
-              <a href="">
+              <Link to="">
                 <i class="bi bi-facebook"></i>
-              </a>
-              <a href="">
+              </Link>
+              <Link to="">
                 <i class="bi bi-instagram"></i>
-              </a>
-              <a href="">
+              </Link>
+              <Link to="">
                 <i class="bi bi-youtube"></i>
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-lg-3 headerSection2 col-md-6 col-sm-12">
             <h4>Products</h4>
             <ul>
               <li>
-                <a href="">Flights</a>
+                <Link to="">Flights</Link>
               </li>
               <li>
-                <a href="">Visas</a>
+                <Link to="">Visas</Link>
               </li>
               <li>
-                <a href="">Rewards</a>
+                <Link to="">Rewards</Link>
               </li>
               <li>
-                <a href="">Site Map</a>
+                <Link to="">Site Map</Link>
               </li>
             </ul>
           </div>
@@ -43,13 +43,13 @@ export default function LowerFooter() {
             <h4>Company</h4>
             <ul>
               <li>
-                <a href="">Our Stories</a>
+                <Link to="">Our Stories</Link>
               </li>
               <li>
-                <a href="">Terms & Conditions</a>
+                <Link to="">Terms & Conditions</Link>
               </li>
               <li>
-                <a href="">Careers</a>
+                <Link to="">Careers</Link>
               </li>
             </ul>
           </div>
@@ -57,13 +57,13 @@ export default function LowerFooter() {
             <h4>Support</h4>
             <ul>
               <li>
-                <a href="">My Accounts</a>
+                <Link to="">My Accounts</Link>
               </li>
               <li>
-                <a href="">Contact Us</a>
+                <Link to="">Contact Us</Link>
               </li>
               <li>
-                <a href="">Privacy Policy</a>
+                <Link to="">Privacy Policy</Link>
               </li>
             </ul>
           </div>
