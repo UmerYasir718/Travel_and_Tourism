@@ -107,6 +107,44 @@ nav .active {
   }
 }
 
+/*------------------------------------------ SelectBar -------------------------------------*/
+.SelectSetting {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  left: 50px;
+  bottom: 200px;
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 35px;
+  border-radius: 15px;
+  max-width: 50vw;
+}
+
+.SelectBar {
+  width: 80%;
+}
+
+.SelectBtn {
+  width: 20%;
+}
+
+@media only screen and (max-width: 998px) {
+  .SelectSetting {
+    max-width: 80vw;
+  }
+
+  .SelectBar {
+    width: 70%;
+  }
+
+  .SelectBtn {
+    width: 30%;
+  }
+}
+
+
 /*------------------------------------------ TopDestination -------------------------------------*/
 .TDCardSetting {
   display: flex;
