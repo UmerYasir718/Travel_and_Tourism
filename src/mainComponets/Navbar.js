@@ -32,7 +32,7 @@ export default function Navbar() {
             Logo
           </Link>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler text-bg-dark"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -46,7 +46,7 @@ export default function Navbar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink className="nav-link mx-2 active" to="/Visa">
-                  <i class="fa-brands fa-cc-visa"></i> Visa
+                  <i class="fa-brands fa-cc-visa"></i>&nbsp; Visa
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -66,8 +66,8 @@ export default function Navbar() {
                 </NavLink>
               </li>
             </ul>
-            <div className="d-flex">
-              <button className="btn navBtn btn-lg mx-md-2 ">
+            <div className="d-flex navBtnGroup">
+              <button className="btn navBtn btn-lg mx-2 ">
                 Free Consultancy
               </button>
               <button className="btn navBtn btn-lg ">My Account</button>

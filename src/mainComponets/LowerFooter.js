@@ -67,6 +67,14 @@ export default function LowerFooter() {
               </li>
             </ul>
           </div>
+
+        </div>
+      </div>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 col-md-12 col-sm-12 col-lg-12 secondFooter">
+            © 2023 All Rights Reserved to Developers
+          </div>
         </div>
       </div>
     </>
