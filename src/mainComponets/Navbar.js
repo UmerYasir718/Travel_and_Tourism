@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`navbar navbar-expand-lg navbar-dark fixed-top Navbar ${
+        className={`navbar navbar-expand-lg navbar-dark fixed-top Navbar bg-white-md ${
           scrolled ? "scrolled" : ""
         }`}
       >
@@ -67,7 +67,7 @@ export default function Navbar() {
               </li>
             </ul>
             <div className="d-flex">
-              <button className="btn navBtn btn-lg  mx-2 ">
+              <button className="btn navBtn btn-lg mx-md-2 ">
                 Free Consultancy
               </button>
               <button className="btn navBtn btn-lg ">My Account</button>
