@@ -90,6 +90,12 @@ nav .active {
   margin-left: auto;
 }
 
+/*------------------------------------------ Most Popular Routes -------------------------------------*/
+.carousel-item {
+  display: flex;
+  flex-direction: column;
+}
+
 /* -----------LowerFooter------------------ */
 .socialIcons a {
   display: inline-flex;

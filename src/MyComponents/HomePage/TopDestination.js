@@ -4,6 +4,7 @@ export default function TopDestination() {
   return (
     <div className="container mb-3">
       <div className="row">
+        <h2 className="fw-bold mb-4">Top Visa Destination</h2>
         <div class="col-3 col-12 col-md-6 col-sm-12 col-lg-3 mb-3 d-flex justify-content-center align-content-center">
           <div className="float-start" style={{ width: "25rem" }}>
             <figure className="position-relative">
