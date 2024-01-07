@@ -6,6 +6,7 @@ import MostPopularRoutes from "./MostPopularRoutes";
 import NavHome from "./NavHome";
 import SelectBar from "./SelectBar";
 import TopDestination from "./TopDestination";
+import TopVisaDestination from "./TopVisaDestination";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Carousel />
       <TopDestination />
       <MostPopularRoutes />
+      <TopVisaDestination />
       <UpperFooter />
       <LowerFooter />
     </div>

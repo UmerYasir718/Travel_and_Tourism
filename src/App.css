@@ -62,8 +62,8 @@
 
 .nav-link:hover {
   font-size: 20px;
-  color: black;
-  background-color: rgb(210, 192, 192);
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   border-radius: 10px;
 }
 
@@ -78,6 +78,13 @@ nav .active {
 
 .navBtn {
   background-color: red;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.navBtn:hover {
+  background-color: rgb(1, 1, 1);
   padding: 5px;
   border-radius: 5px;
   color: white;
@@ -225,6 +232,57 @@ nav .active {
   font-weight: bolder;
 }
 
+/*------------------------------------------ Top Visa Destination -------------------------------------*/
+/* .topVisaDestination {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+} */
+
+.smallCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  /* width: 40vw; */
+  /* background-color: lightgrey; */
+  color: black;
+  border-bottom: 2px solid black;
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.smallCardPrice {
+  color: #0D6EFD;
+  font-weight: bold;
+}
+
+.smallCardTitle {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.CardLink {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-left: auto;
+  top: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+}
 
 /* ---------------------------------------------------------------LowerFooter-------------------------------------------- */
 .socialIcons a {
@@ -285,6 +343,7 @@ nav .active {
   padding: 3px;
   font-size: 20px;
 }
+
 /* -----------------------------------------```````````````UpperFooter``````````````````````````------------------------------------------------------ */
 .UpperFooter {
   background: url("../public/UpperFooter.jpg");
@@ -293,7 +352,8 @@ nav .active {
   background-size: cover;
   height: auto;
 }
-.subscribe{
+
+.subscribe {
   width: 100%;
   max-width: 500px;
   background: white;
@@ -303,13 +363,15 @@ nav .active {
   padding: 10px 20px;
   margin-top: 40px;
 }
-.subscribe input{
+
+.subscribe input {
   background: transparent;
   border: 0;
   outline: none;
   flex: 1;
 }
-.subscribe button{
+
+.subscribe button {
   width: 100%;
   max-width: 100px;
   padding: 6px 15px;
@@ -318,12 +380,14 @@ nav .active {
   color: white;
   border: none;
 }
-.SubscribeText h2{
+
+.SubscribeText h2 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
 @media only screen and (max-width: 998px) {
-  .subscribe{
+  .subscribe {
     width: 100%;
     max-width: 100%;
     background: white;
@@ -333,5 +397,5 @@ nav .active {
     padding: 10px 20px;
     margin-top: 5px;
     margin-bottom: 20px;
-  } 
-} 
+  }
+}
