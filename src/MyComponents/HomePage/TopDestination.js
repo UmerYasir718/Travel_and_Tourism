@@ -5,7 +5,7 @@ export default function TopDestination() {
     <div className="container mb-3">
       <div className="row">
         <h2 className="fw-bold mb-4">Top Visa Destination</h2>
-        <div class="col-3 col-12 col-md-6 col-sm-12 col-lg-3 mb-3 TDCardSetting">
+        <div className="col-3 col-12 col-md-6 col-sm-12 col-lg-3 mb-3 TDCardSetting">
           <div className="float-start" style={{ width: "25rem" }}>
             <figure className="position-relative">
               <img
@@ -33,7 +33,7 @@ export default function TopDestination() {
             </div>
           </div>
         </div>
-        <div class="col-3 col-12 col-md-6 col-sm-12 col-lg-3 mb-3 TDCardSetting">
+        <div className="col-3 col-12 col-md-6 col-sm-12 col-lg-3 mb-3 TDCardSetting">
           <div className="" style={{ width: "25rem" }}>
             <figure className="position-relative">
               <img
@@ -63,7 +63,7 @@ export default function TopDestination() {
             </div>
           </div>
         </div>
-        <div class="col-6 col-12 col-md-12 col-sm-12 col-lg-6 mb-3 TDCardSetting">
+        <div className="col-6 col-12 col-md-12 col-sm-12 col-lg-6 mb-3 TDCardSetting">
           <div className="" style={{ width: "50rem" }}>
             <figure className="position-relative">
               <img
