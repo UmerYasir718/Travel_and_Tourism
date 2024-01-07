@@ -46,17 +46,18 @@ export default function Navbar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink className="nav-link mx-2 active" to="/Visa">
-                  <i class="fa-brands fa-cc-visa"></i>&nbsp; Visa
+                  <i className="fa-brands fa-cc-visa"></i>&nbsp; Visa
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link mx-2" to="/flight">
-                  <i class="fa-solid fa-jet-fighter"></i>
+                  <i className="fa-solid fa-jet-fighter"></i>
                   Flight
                 </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link mx-2" to="/offers">
+                  <i className="bi bi-tags"></i>
                   Offers
                 </NavLink>
               </li>
