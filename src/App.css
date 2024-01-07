@@ -285,7 +285,7 @@ nav .active {
   padding: 3px;
   font-size: 20px;
 }
-/* -----------------------------------------UpperFooter------------------------------------------------------ */
+/* -----------------------------------------```````````````UpperFooter``````````````````````````------------------------------------------------------ */
 .UpperFooter {
   background: url("../public/UpperFooter.jpg");
   background-position: 50%;
@@ -301,6 +301,7 @@ nav .active {
   align-items: center;
   border-radius: 60px;
   padding: 10px 20px;
+  margin-top: 40px;
 }
 .subscribe input{
   background: transparent;
@@ -316,4 +317,35 @@ nav .active {
   background: #FF0000;
   color: white;
   border: none;
+}
+.SubscribeText h2{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px){
+  .subscribe{
+    width: 100%;
+    max-width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+}
+@media screen and (max-width: 576px){
+  .subscribe{
+    width: 100%;
+    max-width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
 }
