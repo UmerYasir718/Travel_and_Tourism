@@ -12,13 +12,13 @@ export default function LowerFooter() {
             </h5>
             <div className="socialIcons my-3">
               <Link to="">
-                <i class="bi bi-facebook"></i>
+                <i className="bi bi-facebook"></i>
               </Link>
               <Link to="">
-                <i class="bi bi-instagram"></i>
+                <i className="bi bi-instagram"></i>
               </Link>
               <Link to="">
-                <i class="bi bi-youtube"></i>
+                <i className="bi bi-youtube"></i>
               </Link>
             </div>
           </div>
@@ -67,7 +67,6 @@ export default function LowerFooter() {
               </li>
             </ul>
           </div>
-
         </div>
       </div>
       <div className="container-fluid">
