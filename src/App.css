@@ -401,3 +401,21 @@ nav .active {
     margin-bottom: 20px;
   }
 }
+/* ---------------------------------------------------------Carousel Buttons------------------------------------------------------------ */
+.carouselBtn{
+  background: none;
+  color: gray;
+  border: 2px solid red;
+  width: 150px;
+  margin: 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.carouselBtn:hover{
+  background: red;
+  color: white;
+  border: 2px solid red;
+  width: 150px;
+  margin: 10px;
+  border-radius: 50px;
+}
