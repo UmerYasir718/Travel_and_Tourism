@@ -43,7 +43,7 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 m-auto d-flex justify-content-center align-content-center">
               <li className="nav-item">
                 <NavLink className="nav-link mx-2 active" to="/Visa">
                   <i className="fa-brands fa-cc-visa"></i>&nbsp; Visa

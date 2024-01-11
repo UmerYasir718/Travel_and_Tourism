@@ -21,10 +21,10 @@
   box-sizing: border-box;
   left: 0;
   padding: 15px;
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+  position: absolute;
 }
 
 .navbar-brand {
@@ -36,6 +36,7 @@
   color: black;
   /* border-bottom: 2px solid black; */
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  position: fixed;
 
   .navbar-brand {
     color: black;
@@ -43,13 +44,13 @@
 
 }
 
-.navbar-nav {
+/* .navbar-nav {
   display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
   margin: auto;
-}
+} */
 
 .nav-link {
   font-size: 20px;
