@@ -29,7 +29,16 @@ export default function Navbar() {
       >
         <div className="container-fluid">
           <Link className="navbar-brand fs-1" to="/">
-            Logo
+            <img
+              src="./LogoDark.png"
+              alt="Bootstrap"
+              style={{
+                width: "200px",
+                height: "70px",
+                backgroundColor: "black",
+                borderRadius: "10px",
+              }}
+            />
           </Link>
           <button
             className="navbar-toggler text-bg-dark"
@@ -45,7 +54,7 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 m-auto d-flex justify-content-center align-content-center">
               <li className="nav-item">
-                <NavLink className="nav-link mx-2 active" to="/Visa">
+                <NavLink className="nav-link mx-2 " to="/">
                   <i className="fa-brands fa-cc-visa"></i>&nbsp; Visa
                 </NavLink>
               </li>
