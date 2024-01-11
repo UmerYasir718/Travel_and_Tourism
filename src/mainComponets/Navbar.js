@@ -52,26 +52,26 @@ export default function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0 m-auto d-flex justify-content-center align-content-center">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li className="nav-item">
-                <NavLink className="nav-link mx-2 " to="/">
-                  <i className="fa-brands fa-cc-visa"></i>&nbsp; Visa
+                <NavLink className="nav-link  " to="/visa">
+                  <i className="fa-brands fa-cc-visa"></i> Visa
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link mx-2" to="/flight">
+                <NavLink className="nav-link" to="/flight">
                   <i className="fa-solid fa-jet-fighter"></i>
                   Flight
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link mx-2" to="/offers">
+                <NavLink className="nav-link" to="/offers">
                   <i className="bi bi-tags"></i>
                   Offers
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link mx-2" to="/packages">
+                <NavLink className="nav-link" to="/packages">
                   Packages
                 </NavLink>
               </li>
