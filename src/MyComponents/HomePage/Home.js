@@ -1,13 +1,13 @@
 import React from "react";
 import LowerFooter from "../../mainComponets/LowerFooter";
+import MostPopularRoutes from "../../mainComponets/MostPopularRoutes";
+import SelectBar from "../../mainComponets/SelectBar";
+import TopDestination from "../../mainComponets/TopDestination";
+import TopVisaDestination from "../../mainComponets/TopVisaDestination";
 import UpperFooter from "../../mainComponets/UpperFooter";
 import Carousel from "./Carousel";
-import MostPopularRoutes from "./MostPopularRoutes";
+import CarouselButtons from "./CarouselButtons";
 import NavHome from "./NavHome";
-import SelectBar from "./SelectBar";
-import TopDestination from "./TopDestination";
-import TopVisaDestination from "./TopVisaDestination";
-import CarouselButtons from "../../mainComponets/CarouselButtons";
 
 export default function Home() {
   return (
