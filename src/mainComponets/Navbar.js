@@ -31,7 +31,7 @@ export default function Navbar() {
           <Link className="navbar-brand fs-1" to="/">
             <img
               src="./LogoDark.png"
-              alt="Bootstrap"
+              alt="PlatformIntl"
               style={{
                 width: "200px",
                 height: "70px",
