@@ -8,7 +8,6 @@ import UpperFooter from "../../mainComponets/UpperFooter";
 import Carousel from "./Carousel";
 import CarouselButtons from "./CarouselButtons";
 import NavHome from "./NavHome";
-
 export default function Home() {
   return (
     <div>
