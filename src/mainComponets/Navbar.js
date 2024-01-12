@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+
 import "../App.css";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -71,7 +72,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/packages">
+                <NavLink className="nav-link" to="/country">
                   Packages
                 </NavLink>
               </li>
