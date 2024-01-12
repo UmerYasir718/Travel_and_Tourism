@@ -438,3 +438,34 @@ nav .active {
   margin: 10px;
   border-radius: 50px;
 }
+
+/* ---------------------------------------------------------Visa ApplyOnline------------------------------------------------------------ */
+.ApplyCardSetting {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  height: 60vh;
+}
+
+.ApplyCardSetting img {
+  height: 300px;
+}
+
+.Method {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  color: black;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.MethodDescription {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  color: black;
+}
