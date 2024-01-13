@@ -14,9 +14,9 @@ export default function Offers() {
       <UpperFooter />
       <LowerFooter />
 
-      <h1 className="alert alert-danger " style={{ marginTop: "100px" }}>
+      {/* <h1 className="alert alert-danger " style={{ marginTop: "100px" }}>
         Page Is Under Development
-      </h1>
+      </h1> */}
     </div>
   );
 }
