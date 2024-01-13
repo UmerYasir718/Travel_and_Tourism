@@ -469,4 +469,30 @@ nav .active {
   margin: auto;
   color: black;
 }
-/* ------------------------------------------------------------Country------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------FAQ's------------------------------------------------------------------------------ */
+
+.item {
+  margin-bottom: 5px;
+}
+
+.question {
+  padding: 10px;
+  cursor: pointer;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.answer{
+  padding: 10px;
+  display: none;
+}
+.answerShow{
+  padding: 10px;
+}
+
+.item.active .question {
+  display: block;
+}
