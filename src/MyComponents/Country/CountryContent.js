@@ -2,7 +2,7 @@ import React from "react";
 export default function CountryContent() {
   return (
     <>
-      <div className="container">
+      <div className="container my-5 ">
         <h2>Australia</h2>
         <p>
           <ul>
@@ -22,9 +22,9 @@ export default function CountryContent() {
           Platform Intl also facilitates Australia visas.
         </p>
         {/* ---------------------------------------------------Cards section----------------------------------------------------------------- */}
-        <div class="card">
-          <h3 class="card-header ">Document Required </h3>
-          <div class="card-body">
+        <div className="card">
+          <h3 className="card-header ">Document Required </h3>
+          <div className="card-body">
             <p>
               <b className="text-primary"> 1-NADRA </b>
               <h5>Documents Required for Australia Visa from Pakistan</h5>
@@ -110,7 +110,7 @@ export default function CountryContent() {
                 </li>
                 <li>
                   Original Personal Bank Account Statement for the last 6 months
-                  mentioning the Bank’s name, Bank Telephone Number, Applicant’s
+                  mentioning the Banks name, Bank Telephone Number, Applicants
                   Name, and Account No. clearly on Bank letterhead with a seal &
                   sign of a Bank officer with a minimum closing balance of
                   around PKR 1,000,000 in case of traveling alone. If the family
@@ -119,8 +119,8 @@ export default function CountryContent() {
                 </li>
                 <li>
                   Original Company Current Bank Account Statement for last 5
-                  months mentioning the Bank’s name, Bank’s Telephone Number,
-                  Applicant’s Name, and Account No. clearly, on Bank letterhead
+                  months mentioning the Banks name, Banks Telephone Number,
+                  Applicants Name, and Account No. clearly, on Bank letterhead
                   with the seal & sign of the Bank officer, the statement should
                   be updated at least 7 days prior to the submission date. OR If
                   the Current A/c statement is very bulky then you can provide
@@ -182,12 +182,45 @@ export default function CountryContent() {
           </div>
         </div>
         {/* ---------------------------------------------------------Card#2---------------------------------------------- */}
-        <div class="card my-5">
-          <h3 class="card-header">Important Notes</h3>
-          <div class="card-body">
+        <div className="card my-5">
+          <h3 className="card-header">Important Notes</h3>
+          <div className="card-body">
             <div className="importantNotes">
               <h5> Important Note for Australia Visa: </h5>
-              <ul></ul>
+              <ul>
+                <li>
+                  Please deposit the latest bank statement, which should not be
+                  more than 7 days old at the time of submission
+                </li>
+                <li>
+                  For minor applicants, visa forms & other supporting forms
+                  should be signed by both parents along with a Signature or
+                  Thumb impression of the Minor applicant as appearing on
+                  his/her passport
+                </li>
+                <li>
+                  The amount you are paying includes the file assistance charges
+                  and visit visa fee for Australia is separate
+                </li>
+                <li>
+                  The fee for Australian Embassy is currently $190 (equivalent
+                  to PKR 36,100)
+                </li>
+                <li>
+                  Yugo.pk will be providing you with all the necessary
+                  supporting documents, letters, and bookings that are expected
+                  from a travel company in order to complete your visa
+                  application
+                </li>
+                <li>
+                  All other documents such as financial and personal documents,
+                  are to be provided by the client themselves
+                </li>
+                <li>
+                  Visa approval is at the discretion of the Australian High
+                  Commission visa-issuing officer
+                </li>
+              </ul>
             </div>
           </div>
         </div>
