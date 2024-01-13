@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../../mainComponets/Navbar";
-import TopImage from "./TopImage";
-
+import CountryContent from "./CountryContent";
 export default function Country() {
   return (
     <>
       <Navbar />
-      <TopImage />
+      <img src="../public/australia.jpg" alt="" />
+      <CountryContent />
     </>
   );
 }
