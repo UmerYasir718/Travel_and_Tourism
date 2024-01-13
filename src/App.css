@@ -492,3 +492,41 @@ nav .active {
     height: 350px;
     width: 250px;
   }
+/* ------------------------------------------------------------FAQ's------------------------------------------------------------------------------ */
+
+.item {
+  margin-bottom: 5px;
+}
+
+.question {
+  padding: 10px;
+  cursor: pointer;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.answer{
+  padding: 10px;
+  display: none;
+}
+.answerShow{
+  padding: 10px;
+}
+
+.item.active .question {
+  display: block;
+=======
+/* ------------------------------------------------------------Country------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------PopularAirLines------------------------------------------------------------------------------ */
+.AirLinesCard{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-bottom: 3px;
+>>>>>>> 29890410a47570c4e3ce28000d1e8c676d94822c
+}
