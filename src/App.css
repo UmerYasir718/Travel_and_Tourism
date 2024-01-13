@@ -470,3 +470,12 @@ nav .active {
   color: black;
 }
 /* ------------------------------------------------------------Country------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------PopularAirLines------------------------------------------------------------------------------ */
+.AirLinesCard{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  margin-bottom: 3px;
+}
