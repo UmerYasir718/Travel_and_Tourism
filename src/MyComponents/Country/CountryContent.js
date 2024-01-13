@@ -2,7 +2,7 @@ import React from "react";
 export default function CountryContent() {
   return (
     <>
-      <div className="container">
+      <div className="container my-5 ">
         <h2>Australia</h2>
         <p>
           <ul>
@@ -22,9 +22,9 @@ export default function CountryContent() {
           Platform Intl also facilitates Australia visas.
         </p>
         {/* ---------------------------------------------------Cards section----------------------------------------------------------------- */}
-        <div class="card">
-          <h3 class="card-header ">Document Required </h3>
-          <div class="card-body">
+        <div className="card">
+          <h3 className="card-header ">Document Required </h3>
+          <div className="card-body">
             <p>
               <b className="text-primary"> 1-NADRA </b>
               <h5>Documents Required for Australia Visa from Pakistan</h5>
@@ -83,7 +83,145 @@ export default function CountryContent() {
             </p>
             <p>
               <b className="text-primary">3- Additional Documents</b>
+              <h4>Financial Documents for Australia Visa from Pakistan</h4>
+              <h5>If Employed: </h5>
+              <ul>
+                <li>Original Leave sanction letter on Employers Letterhead</li>
+                <li>
+                  Original Personal Bank Account Statement for the last 6 months
+                  mentioning the Banks name, Bank Telephone Number, Applicants
+                  Name, and Account No. clearly on Bank letterhead with a seal &
+                  sign of the Bank officer with a minimum closing balance of
+                  around PKR 1,000,000 (Sudden deposit of money is not
+                  appreciated).
+                </li>
+                <li>Last 3 months salary slips</li>
+                <li>
+                  Personal Income Tax Returns for the last 3 Assessment years or
+                  Tax Deduction Certificate
+                </li>
+              </ul>
+              <h5>If a Self-Employed Professional / Businessman </h5>
+              <ul>
+                <li>Personal Income Tax returns for the last 3 years</li>
+                <li>
+                  Company Income Tax returns for the last 3 years (If filed
+                  separately)
+                </li>
+                <li>
+                  Original Personal Bank Account Statement for the last 6 months
+                  mentioning the Banks name, Bank Telephone Number, Applicants
+                  Name, and Account No. clearly on Bank letterhead with a seal &
+                  sign of a Bank officer with a minimum closing balance of
+                  around PKR 1,000,000 in case of traveling alone. If the family
+                  wants to apply, in that case, ensure the funds are above PKR
+                  2,000,000 Sudden deposit of money is not appreciated).
+                </li>
+                <li>
+                  Original Company Current Bank Account Statement for last 5
+                  months mentioning the Banks name, Banks Telephone Number,
+                  Applicants Name, and Account No. clearly, on Bank letterhead
+                  with the seal & sign of the Bank officer, the statement should
+                  be updated at least 7 days prior to the submission date. OR If
+                  the Current A/c statement is very bulky then you can provide
+                  an Original Balance confirmation letter on Bank letterhead
+                  with seal & sign (If having a separate Bank, A/c statement in
+                  the name of the company)
+                </li>
+              </ul>
+              <div className="supportingDocument">
+                <h4>Supporting Documents for Australia Visa from Pakistan</h4>
+                <h5>If Employed:</h5>
+                <ul>
+                  <li>Visiting card & Employee ID card (company card) copy</li>
+                </ul>
+              </div>
+              <div className="selfEmployed">
+                <h5>If a Self-Employed Professional / Businessman </h5>
+                <ul>
+                  <li>
+                    Company Registration Certificate / Certificate of
+                    Incorporation
+                  </li>
+                  <li>
+                    Proof of Proprietorship / Partnership (In case the applicant
+                    is a Proprietor / Partner in a firm)
+                  </li>
+                  <li>
+                    Chamber of Commerce Certificate if you have a membership
+                    with the Chamber of Commerce.
+                  </li>
+                </ul>
+              </div>
+              <div className="student">
+                <h5>If Student</h5>
+                <ul>
+                  <li>School / College / University ID card copy</li>
+                  <li>
+                    Leave sanction letter on school or college letterhead /
+                    Bonafide letter
+                  </li>
+                  <li>
+                    If a Minor student is traveling alone or only with one
+                    parent, a No Objection Certificate is required on PKR 100
+                    stamp paper from a non-accompanying parent, attested by
+                    Notary Public along with their signature id proof like a
+                    passport copy.
+                  </li>
+                </ul>
+              </div>
+              <div className="retired">
+                <h5>If Retired</h5>
+                <ul>
+                  <li>Copy of retirement order/reliving letter</li>
+                  <li>Copy of discharge book</li>
+                  <li>Copy of pension book if any</li>
+                </ul>
+              </div>
             </p>
+          </div>
+        </div>
+        {/* ---------------------------------------------------------Card#2---------------------------------------------- */}
+        <div className="card my-5">
+          <h3 className="card-header">Important Notes</h3>
+          <div className="card-body">
+            <div className="importantNotes">
+              <h5> Important Note for Australia Visa: </h5>
+              <ul>
+                <li>
+                  Please deposit the latest bank statement, which should not be
+                  more than 7 days old at the time of submission
+                </li>
+                <li>
+                  For minor applicants, visa forms & other supporting forms
+                  should be signed by both parents along with a Signature or
+                  Thumb impression of the Minor applicant as appearing on
+                  his/her passport
+                </li>
+                <li>
+                  The amount you are paying includes the file assistance charges
+                  and visit visa fee for Australia is separate
+                </li>
+                <li>
+                  The fee for Australian Embassy is currently $190 (equivalent
+                  to PKR 36,100)
+                </li>
+                <li>
+                  Yugo.pk will be providing you with all the necessary
+                  supporting documents, letters, and bookings that are expected
+                  from a travel company in order to complete your visa
+                  application
+                </li>
+                <li>
+                  All other documents such as financial and personal documents,
+                  are to be provided by the client themselves
+                </li>
+                <li>
+                  Visa approval is at the discretion of the Australian High
+                  Commission visa-issuing officer
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
