@@ -1,10 +1,17 @@
 import React from "react";
-import Navbar from "../../mainComponets/Navbar";
+import NavOffer from "./NavOffer";
+import OfferCarousel from "./OfferCarousel";
+import UpperFooter from "../../mainComponets/UpperFooter";
+import LowerFooter from "../../mainComponets/LowerFooter";
 
 export default function Offers() {
   return (
     <div>
-      <Navbar />
+      <NavOffer />
+      <OfferCarousel />
+      <UpperFooter />
+      <LowerFooter />
+
       <h1 className="alert alert-danger " style={{ marginTop: "100px" }}>
         Page Is Under Development
       </h1>
