@@ -3,12 +3,14 @@ import NavOffer from "./NavOffer";
 import OfferCarousel from "./OfferCarousel";
 import UpperFooter from "../../mainComponets/UpperFooter";
 import LowerFooter from "../../mainComponets/LowerFooter";
+import HowToBook from "./HowToBook";
 
 export default function Offers() {
   return (
     <div>
       <NavOffer />
       <OfferCarousel />
+      <HowToBook />
       <UpperFooter />
       <LowerFooter />
 

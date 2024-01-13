@@ -479,3 +479,16 @@ nav .active {
   border-radius: 15px;
   margin-bottom: 3px;
 }
+/* -----------------------------------------------------BookCard------------------------------------------------- */
+.BookingCard{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  border:2px solid black;
+  border-radius: 15px;
+  }
+  .BookingCard img{
+    height: 350px;
+    width: 250px;
+  }
