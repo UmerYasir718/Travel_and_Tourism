@@ -5,6 +5,7 @@ export default function Country() {
   return (
     <>
       <Navbar />
+      <img src="../public/australia.jpg" alt="" />
       <CountryContent />
     </>
   );
