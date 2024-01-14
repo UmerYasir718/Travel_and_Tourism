@@ -1,12 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function FlightCarousel() {
   return (
     <div>
-      <div
-        className="container"
-        style={{ position: "relative" }}
-      >
+      <div className="container" style={{ position: "relative" }}>
         <h1>Best Deals</h1>
         <div
           id="carouselExampleIndicators"
@@ -56,5 +53,5 @@ export default function FlightCarousel() {
         </div>
       </div>
     </div>
-  )
+  );
 }

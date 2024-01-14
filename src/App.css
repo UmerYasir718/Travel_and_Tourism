@@ -209,15 +209,32 @@ nav .active {
 }
 
 /*------------------------------------------ Most Popular Routes -------------------------------------*/
-.MPRCardSetting {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+.card img{
+  width: 15rem;
+  height: 10rem;
+  
+}
+.card{
+align-items: center;
+border: 2px gray solid;
+border-radius: 35px;
 }
 
+
+
+
+/* .MPRCardSetting img{
+  width: 20vw;
+  height: 25vh;
+
+}
+.MPRCardSetting {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
 .MPRCard-img {
   border: 2px solid black;
-  padding: 30px;
   border-radius: 45px;
 }
 
@@ -242,14 +259,14 @@ nav .active {
   align-content: center;
   color: black;
   font-weight: bolder;
-}
+}  */
 
 /*------------------------------------------ Top Visa Destination -------------------------------------*/
-/* .topVisaDestination {
+.topVisaDestination {
   display: flex;
   justify-content: center;
   align-content: center;
-} */
+}
 
 .smallCard {
   display: flex;
