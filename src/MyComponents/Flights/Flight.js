@@ -1,13 +1,22 @@
 import React from "react";
-import Navbar from "../../mainComponets/Navbar";
-
+import NavFlight from "./NavFlight";
+import FlightCarousel from "./FlightCarousel";
+import MostPopularRoutes from "../../mainComponets/MostPopularRoutes";
+import PopularAirlines from "./PopularAirlines";
+import UpperFooter from "../../mainComponets/UpperFooter";
+import LowerFooter from "../../mainComponets/LowerFooter";
 export default function Flight() {
   return (
     <div>
-      <Navbar />
-      <h1 className="alert alert-danger" style={{ marginTop: "100px" }}>
+      <NavFlight />
+      <FlightCarousel />
+      <MostPopularRoutes />
+      <PopularAirlines />
+      <UpperFooter />
+      <LowerFooter />
+      {/* <h1 className="alert alert-danger" style={{ marginTop: "100px" }}>
         Page Is Under Development
-      </h1>
+      </h1> */}
     </div>
   );
 }
