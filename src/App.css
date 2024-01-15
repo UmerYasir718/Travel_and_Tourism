@@ -606,3 +606,15 @@ nav .active {
   height: 350px;
   width: 250px;
 }
+/* ---------------------------------------------------Login Form-------------------------------------------------------------------- */
+.wrapper{
+  height: 100vh;
+}
+.login{
+  width: 30vw;
+  height: min-content;
+  border-radius: 30px;
+  border: 2px solid white;
+  padding: 20px;
+  color: white;
+}
