@@ -1,17 +1,100 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./Navbar";
 export default function SignUp() {
+  const navigate = useNavigate();
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userPassword, setUserPassword] = useState("");
+  const [userConfirmPassword, setUserConfirmPassword] = useState("");
+
+  const handleUseName = async (e) => {
+    setUserName(e.target.value);
+  };
+  const handleEmail = async (e) => {
+    setUserEmail(e.target.value);
+  };
+  const handlePassword = async (e) => {
+    setUserPassword(e.target.value);
+  };
+  const handleConfirmPassword = async (e) => {
+    setUserConfirmPassword(e.target.value);
+  };
+  const handleData = async (e) => {
+    e.preventDefault();
+    if (userPassword === userConfirmPassword) {
+      try {
+        const response = await fetch(
+          "https://travelandtourismapis-production.up.railway.app/signUp",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ userName, userEmail, userPassword }),
+          }
+        );
+
+        const data = await response.json();
+
+        if (data.success) {
+          // Redirect to the dashboard upon successful login
+          // history.push('/dashboard');
+          navigate("/login");
+          toast.success(data.message);
+        } else {
+          // Handle login failure
+          console.error(data.message);
+          toast.error(data.message);
+        }
+      } catch (error) {
+        console.error("Error occurred during login:", error);
+        toast.error("Error occurred");
+      }
+    } else {
+      toast.error("Both Password must be same");
+    }
+  };
   return (
     <>
       <Navbar />
       <div className="bg-dark">
         <div className="container wrapper d-flex justify-content-center align-items-center w-100">
           <div className="signUp">
-            <h4>SignUp</h4>
+            <img
+              src="./LogoDark.png"
+              alt="PlatformIntl"
+              className="d-flex justify-content-center align-items-center m-auto mb-3"
+              style={{
+                width: "200px",
+                height: "70px",
+                backgroundColor: "white",
+                borderRadius: "10px",
+              }}
+            />
+            {/* <h4 className="d-flex justify-content-center align-content-center">
+              SignUp
+            </h4> */}
             <hr />
-            <form className="need-validation">
-              <div className="mb-3 was-validated">
-                <label for="exampleInputEmail1" className="form-label">
+            <div className="">
+              <div className="mb-3">
+                <label htmlFor="exampleInputName" className="form-label">
+                  UserName
+                </label>
+                <input
+                  type="email"
+                  className="form-control"
+                  required
+                  id="UserName"
+                  aria-describedby=""
+                  value={userName}
+                  onChange={handleUseName}
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="exampleInputEmail1" className="form-label">
                   Email address
                 </label>
                 <input
@@ -20,10 +103,12 @@ export default function SignUp() {
                   required
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
+                  value={userEmail}
+                  onChange={handleEmail}
                 />
               </div>
-              <div className="mb-3 was-validated">
-                <label for="exampleInputPassword1" className="form-label">
+              <div className="mb-3 ">
+                <label htmlFor="exampleInputPassword1" className="form-label">
                   Password
                 </label>
                 <input
@@ -31,23 +116,37 @@ export default function SignUp() {
                   className="form-control"
                   required
                   id="exampleInputPassword1"
+                  value={userPassword}
+                  onChange={handlePassword}
                 />
               </div>
-              <div className="mb-3 my-3 was-validated">
-                <label for="exampleInputPassword1" className="form-label">
+              <div className="mb-3 my-3 ">
+                <label
+                  htmlFor="exampleInputConfirmPassword1"
+                  className="form-label"
+                >
                   Confirm Password
                 </label>
                 <input
                   type="password"
                   required
                   className="form-control"
-                  id="exampleInputPassword1"
+                  id="exampleInputConfirmPassword1"
+                  value={userConfirmPassword}
+                  onChange={handleConfirmPassword}
                 />
               </div>
-              <button type="submit" className="btn btn-primary w-100">
+              <div className="mb-3">
+                <Link to="/login">Already have a Account</Link>
+              </div>
+              <button
+                type="submit"
+                className="btn btn-primary w-100"
+                onClick={handleData}
+              >
                 SignUp
               </button>
-            </form>
+            </div>
           </div>
         </div>
       </div>

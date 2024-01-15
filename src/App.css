@@ -648,3 +648,12 @@ nav .active {
   padding: 20px;
   color: white;
 }
+/* ------------------------------------------Free Consultacny----------------------------------------------------------- */
+.freeConsultuncy{
+  width: 600px;
+  height: min-content;
+  border-radius: 30px;
+  border: 2px solid white;
+  padding: 20px;
+  color: white;
+}
