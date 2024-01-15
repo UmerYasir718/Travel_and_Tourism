@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../App.css";
+import StateContext from "./StateContext";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
-
+  const { user } = useContext(StateContext);
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -77,13 +78,71 @@ export default function Navbar() {
               </li>
             </ul>
             <div className="d-flex navBtnGroup">
+              {user.userName ? (
+                <>
+                  <div className="dropdown navBtn">
+                    <Link
+                      className="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="https://github.com/mdo.png"
+                        alt=""
+                        width="32"
+                        height="32"
+                        className="rounded-circle me-2"
+                      />
+                      <strong>{user.userName}</strong>
+                    </Link>
+                    <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
+                      <li>
+                        <Link className="dropdown-item">New project...</Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item">Settings</Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item">Profile</Link>
+                      </li>
+                      <li>
+                        <Link className="dropdown-item" to="/signUp">
+                          Sign out
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  {/* <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      {user.userName}
+                    </Link>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <Link className="dropdown-item" href="#">
+                          LogOut
+                        </Link>
+                      </li>
+                    </ul>
+                  </li> */}
+                </>
+              ) : (
+                <button className="btn navBtn btn-lg">
+                  <Link
+                    className="text-decoration-none text-light "
+                    to="/login"
+                  >
+                    My Account
+                  </Link>
+                </button>
+              )}
               <button className="btn navBtn btn-lg mx-2 ">
                 Free Consultancy
-              </button>
-              <button className="btn navBtn btn-lg">
-                <Link className="text-decoration-none text-light " to="/login">
-                  My Account
-                </Link>
               </button>
             </div>
           </div>
