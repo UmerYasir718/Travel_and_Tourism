@@ -78,7 +78,12 @@ export default function Navbar() {
             </ul>
             <div className="d-flex navBtnGroup">
               <button className="btn navBtn btn-lg mx-2 ">
-                Free Consultancy
+                <Link
+                  className="text-decoration-none text-light "
+                  to="/freeConsultancy"
+                >
+                  Free Consultancy
+                </Link>
               </button>
               <button className="btn navBtn btn-lg">
                 <Link

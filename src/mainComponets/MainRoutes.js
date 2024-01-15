@@ -8,6 +8,7 @@ import Packages from "../MyComponents/Packages/Packages";
 import Visa from "../MyComponents/Visa/Visa";
 // import Login from "./Login";
 import SignUp from "./SignUp";
+import FreeConsultancy from "./FreeConsultancy";
 export default function MainRoutes() {
   return (
     <div>
@@ -20,6 +21,11 @@ export default function MainRoutes() {
           <Route exact path="/packages" element={<Packages />}></Route>
           <Route exact path="/country" element={<Country />}></Route>
           <Route exact path="/userAccount" element={<SignUp />}></Route>
+          <Route
+            exact
+            path="/freeConsultancy"
+            element={<FreeConsultancy />}
+          ></Route>
         </Routes>
       </Router>
     </div>
