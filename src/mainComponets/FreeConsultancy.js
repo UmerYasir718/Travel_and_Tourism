@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 export default function FreeConsultancy() {
   const [Number, setNumber] = useState(" ");
   const checkNumber = (event) => {
@@ -66,7 +65,7 @@ export default function FreeConsultancy() {
                 />
               </div>
               <div className="checkNumber text-danger">
-                {Number.length != 10 ? <p> Please enter valid number</p> : " "}
+                {Number.length !== 10 ? <p> Please enter valid number</p> : " "}
               </div>
               <div class="mb-3">
                 <textarea
