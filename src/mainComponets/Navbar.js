@@ -72,7 +72,7 @@ export default function Navbar() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/country">
+                <NavLink className="nav-link" to="/packages">
                   Packages
                 </NavLink>
               </li>

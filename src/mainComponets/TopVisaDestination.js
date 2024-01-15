@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 export default function TopVisaDestination() {
+  const navigate = useNavigate();
+  const [countryName, setCountryName] = useState("");
   const [countryData, setCountryData] = useState("");
-  // const [countryDatarecord, setCountryDatarecord] = useState("");
+  const [countryRecord, setCountryRecord] = useState("");
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -14,24 +16,26 @@ export default function TopVisaDestination() {
       console.error("Error fetching data:", error);
     }
   };
-  // const handleData = async (countryName) => {
-  //   try {
-  //     const url = `http://localhost:8000/home/${countryName}`;
-  //     const response = await fetch(url);
-  //     const json = await response.json();
-  //     setCountryDatarecord(json);
-  //   } catch (error) {
-  //     console.error("Error fetching data:", error);
-  //     alert(error);
-  //   }
-  // };
 
+  const handleCountryRecord = async (countryName) => {
+    try {
+      const response = await fetch(
+        `https://travelandtourismapis-production.up.railway.app/home/${countryName}`
+      );
+      const json = await response.json();
+      setCountryRecord(json);
+      navigate("/country", {
+        state: {
+          countryData: json,
+        },
+      });
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
+  };
   useEffect(() => {
     fetchData();
-    // handleData();
-    // console.log(countryDatarecord);
   }, []);
-
   return (
     <div className="container topVisaDestination mb-3">
       <div className="row">
@@ -46,8 +50,8 @@ export default function TopVisaDestination() {
                     className="title"
                     key={country._id}
                     value={country.countryName}
-                    // onClick={() => handleData(country.countryName)}
                     style={{ cursor: "pointer" }}
+                    onClick={() => handleCountryRecord(country.countryName)}
                   >
                     {country.countryName}
                     <br />
