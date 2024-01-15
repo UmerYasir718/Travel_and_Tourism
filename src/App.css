@@ -209,30 +209,94 @@ nav .active {
 }
 
 /*------------------------------------------ Most Popular Routes -------------------------------------*/
-.card img{
+/* .cardSetting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+} */
+/* 
+.card img {
   width: 15rem;
   height: 10rem;
-  
-}
-.card{
-align-items: center;
-border: 2px gray solid;
-border-radius: 35px;
-}
-
-
-
-
-/* .MPRCardSetting img{
-  width: 20vw;
-  height: 25vh;
+  border: 2px gray solid;
+  border-radius: 15px;
 
 }
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+ */
+
+
+
 .MPRCardSetting {
   display: flex;
   justify-content: space-between;
   align-content: center;
 }
+
+.MPRCardSetting img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 15vw;
+  height: 10rem;
+  border: 2px solid black;
+  border-radius: 45px;
+  padding: 15px;
+
+}
+
+
+@media only screen and (max-width: 1198px) {
+  .MPRCardSetting img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 20vw;
+    height: 10rem;
+    border: 2px solid black;
+    border-radius: 45px;
+    padding: 15px;
+  }
+}
+
+
+@media only screen and (max-width: 992px) {
+  .MPRCardSetting img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 30vw;
+    height: 12rem;
+    border: 2px solid black;
+    border-radius: 45px;
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .MPRCardSetting img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 70vw;
+    height: 18vh;
+    border: 2px solid black;
+    border-radius: 45px;
+    padding: 15px;
+  }
+}
+
+
 .MPRCard-img {
   border: 2px solid black;
   border-radius: 45px;
@@ -259,7 +323,7 @@ border-radius: 35px;
   align-content: center;
   color: black;
   font-weight: bolder;
-}  */
+}
 
 /*------------------------------------------ Top Visa Destination -------------------------------------*/
 .topVisaDestination {
@@ -509,6 +573,7 @@ border-radius: 35px;
     height: 350px;
     width: 250px;
   }
+
 /* ------------------------------------------------------------FAQ's------------------------------------------------------------------------------ */
 
 .item {
@@ -525,25 +590,38 @@ border-radius: 35px;
   margin-bottom: 5px;
 }
 
-.answer{
+.answer {
   padding: 10px;
   display: none;
 }
-.answerShow{
+
+.answerShow {
   padding: 10px;
 }
 
 .item.active .question {
   display: block;
-=======
+}
 /* ------------------------------------------------------------Country------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------PopularAirLines------------------------------------------------------------------------------ */
-.AirLinesCard{
+.AirLinesCard {
   display: flex;
   justify-content: center;
   align-content: center;
   border: 2px solid black;
   border-radius: 15px;
   margin-bottom: 3px;
->>>>>>> 29890410a47570c4e3ce28000d1e8c676d94822c
 }
+/* -----------------------------------------------------BookCard------------------------------------------------- */
+.BookingCard{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  border:2px solid black;
+  border-radius: 15px;
+  }
+  .BookingCard img{
+    height: 350px;
+    width: 250px;
+  }

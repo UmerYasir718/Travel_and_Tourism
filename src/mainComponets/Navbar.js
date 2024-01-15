@@ -80,7 +80,14 @@ export default function Navbar() {
               <button className="btn navBtn btn-lg mx-2 ">
                 Free Consultancy
               </button>
-              <button className="btn navBtn btn-lg ">My Account</button>
+              <button className="btn navBtn btn-lg">
+                <Link
+                  className="text-decoration-none text-light "
+                  to="/userAccount"
+                >
+                  My Account
+                </Link>
+              </button>
             </div>
           </div>
         </div>
