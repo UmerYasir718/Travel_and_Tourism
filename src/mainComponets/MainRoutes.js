@@ -6,7 +6,6 @@ import Home from "../MyComponents/HomePage/Home";
 import Offers from "../MyComponents/Offers/Offers";
 import Packages from "../MyComponents/Packages/Packages";
 import Visa from "../MyComponents/Visa/Visa";
-// import Login from "./Login";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import StateContext from "./StateContext";
