@@ -237,6 +237,7 @@ nav .active {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  padding: 0px;
 }
 
 .MPRCardSetting img {
@@ -248,7 +249,7 @@ nav .active {
   height: 10rem;
   border: 2px solid black;
   border-radius: 45px;
-  padding: 15px;
+  padding: 10px;
 
 }
 
@@ -263,7 +264,7 @@ nav .active {
     height: 10rem;
     border: 2px solid black;
     border-radius: 45px;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -278,7 +279,7 @@ nav .active {
     height: 12rem;
     border: 2px solid black;
     border-radius: 45px;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -288,11 +289,11 @@ nav .active {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    width: 70vw;
-    height: 18vh;
+    width: 60vw;
+    height: 20vh;
     border: 2px solid black;
     border-radius: 45px;
-    padding: 15px;
+    padding: 10px;
   }
 }
 
@@ -620,8 +621,21 @@ nav .active {
 
   border:2px solid black;
   border-radius: 15px;
-  }
-  .BookingCard img{
-    height: 350px;
-    width: 250px;
-  }
+}
+
+.BookingCard img {
+  height: 350px;
+  width: 250px;
+}
+/* ---------------------------------------------------Login Form-------------------------------------------------------------------- */
+.wrapper{
+  height: 100vh;
+}
+.login{
+  width: 30vw;
+  height: min-content;
+  border-radius: 30px;
+  border: 2px solid white;
+  padding: 20px;
+  color: white;
+}
