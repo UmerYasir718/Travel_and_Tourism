@@ -15,7 +15,7 @@ export default function MostPopularRoutes() {
           <div className="">
             <div className="card-detail d-flex justify-content-center align-content-center align-items-center">
               <div className="card-detail-1">
-                <span className="Destination">Lahore To Dubai</span>
+                <span className="Destination">Lahore ➖ Dubai</span>
                 <br />
                 <span className="MPRStartingFrom">Starting from</span>
 
