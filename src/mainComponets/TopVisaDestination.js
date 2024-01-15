@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 export default function TopVisaDestination() {
   const [countryData, setCountryData] = useState("");
+  // const [countryDatarecord, setCountryDatarecord] = useState("");
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -14,8 +15,22 @@ export default function TopVisaDestination() {
       alert(error);
     }
   };
+  // const handleData = async (countryName) => {
+  //   try {
+  //     const url = `http://localhost:8000/home/${countryName}`;
+  //     const response = await fetch(url);
+  //     const json = await response.json();
+  //     setCountryDatarecord(json);
+  //   } catch (error) {
+  //     console.error("Error fetching data:", error);
+  //     alert(error);
+  //   }
+  // };
+
   useEffect(() => {
     fetchData();
+    // handleData();
+    // console.log(countryDatarecord);
   }, []);
 
   return (
@@ -32,6 +47,8 @@ export default function TopVisaDestination() {
                     className="title"
                     key={country._id}
                     value={country.countryName}
+                    // onClick={() => handleData(country.countryName)}
+                    style={{ cursor: "pointer" }}
                   >
                     {country.countryName}
                     <br />

@@ -1,5 +1,22 @@
 import React from "react";
+
 export default function CountryContent() {
+  // const [countryData, setCountryData] = useState("");
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       "https://travelandtourismapis-production.up.railway.app/home/countryRecord"
+  //     );
+  //     const json = await response.json();
+  //     setCountryData(json);
+  //   } catch (error) {
+  //     console.error("Error fetching data:", error);
+  //     alert(error);
+  //   }
+  // };
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
   return (
     <>
       <div className="container my-5 ">
