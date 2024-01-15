@@ -639,3 +639,12 @@ nav .active {
   padding: 20px;
   color: white;
 }
+/* ------------------------------------------Wrapper Handle from login / Sign Up-------------------------------------------------------- */
+.signUp{
+  width: 400px;
+  height: min-content;
+  border-radius: 30px;
+  border: 2px solid white;
+  padding: 20px;
+  color: white;
+}
