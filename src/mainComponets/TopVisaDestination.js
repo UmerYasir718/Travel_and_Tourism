@@ -20,7 +20,7 @@ export default function TopVisaDestination() {
   const handleCountryRecord = async (countryName) => {
     try {
       const response = await fetch(
-        `https://travelandtourismapis-production.up.railway.app/home/${countryName}`
+        `https://travelandtourismapis-production.up.railway.app/admin/${countryName}`
       );
       const json = await response.json();
       setCountryRecord(json);
