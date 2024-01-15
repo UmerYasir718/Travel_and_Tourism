@@ -1,16 +1,16 @@
 import React from "react";
-import NavFlight from "./NavFlight";
-import FlightCarousel from "./FlightCarousel";
-import MostPopularRoutes from "../../mainComponets/MostPopularRoutes";
-import PopularAirlines from "./PopularAirlines";
-import UpperFooter from "../../mainComponets/UpperFooter";
+import CarouselOfPapularRoutes from "../../mainComponets/CarouselOfPapularRoutes";
 import LowerFooter from "../../mainComponets/LowerFooter";
+import UpperFooter from "../../mainComponets/UpperFooter";
+import FlightCarousel from "./FlightCarousel";
+import NavFlight from "./NavFlight";
+import PopularAirlines from "./PopularAirlines";
 export default function Flight() {
   return (
     <div>
       <NavFlight />
       <FlightCarousel />
-      <MostPopularRoutes />
+      <CarouselOfPapularRoutes />
       <PopularAirlines />
       <UpperFooter />
       <LowerFooter />
