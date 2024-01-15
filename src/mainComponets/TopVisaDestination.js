@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 export default function TopVisaDestination() {
   const navigate = useNavigate();
-  const [countryName, setCountryName] = useState("");
+  // const [countryName, setCountryName] = useState("");
   const [countryData, setCountryData] = useState("");
-  const [countryRecord, setCountryRecord] = useState("");
+  const [setCountryRecord] = useState("");
   const fetchData = async () => {
     try {
       const response = await fetch(
