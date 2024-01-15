@@ -86,10 +86,7 @@ export default function Navbar() {
                 </Link>
               </button>
               <button className="btn navBtn btn-lg">
-                <Link
-                  className="text-decoration-none text-light "
-                  to="/userAccount"
-                >
+                <Link className="text-decoration-none text-light " to="/login">
                   My Account
                 </Link>
               </button>

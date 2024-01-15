@@ -1,8 +1,9 @@
 import React from "react";
-
+import Navbar from "./Navbar";
 export default function SignUp() {
   return (
     <>
+      <Navbar />
       <div className="bg-dark">
         <div className="container wrapper d-flex justify-content-center align-items-center w-100">
           <div className="signUp">
