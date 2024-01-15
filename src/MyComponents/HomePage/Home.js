@@ -1,4 +1,5 @@
 import React from "react";
+import CarouselOfPapularRoutes from "../../mainComponets/CarouselOfPapularRoutes";
 import LowerFooter from "../../mainComponets/LowerFooter";
 import SelectBar from "../../mainComponets/SelectBar";
 import TopDestination from "../../mainComponets/TopDestination";
@@ -7,7 +8,6 @@ import UpperFooter from "../../mainComponets/UpperFooter";
 import Carousel from "./Carousel";
 import CarouselButtons from "./CarouselButtons";
 import NavHome from "./NavHome";
-import CarouselOfPapularRoutes from "../../mainComponets/CarouselOfPapularRoutes";
 export default function Home() {
   return (
     <div>
