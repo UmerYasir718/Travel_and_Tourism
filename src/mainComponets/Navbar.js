@@ -142,7 +142,12 @@ export default function Navbar() {
                 </button>
               )}
               <button className="btn navBtn btn-lg mx-2 ">
-                Free Consultancy
+                <Link
+                  className="text-decoration-none text-light "
+                  to="/freeConsultancy"
+                >
+                  Free Consultancy
+                </Link>
               </button>
             </div>
           </div>
