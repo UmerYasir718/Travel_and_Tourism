@@ -6,6 +6,7 @@ import Home from "../MyComponents/HomePage/Home";
 import Offers from "../MyComponents/Offers/Offers";
 import Packages from "../MyComponents/Packages/Packages";
 import Visa from "../MyComponents/Visa/Visa";
+import FreeConsultancy from "./FreeConsultancy";
 import Login from "./Login";
 import SignUp from "./SignUp";
 import StateContext from "./StateContext";
@@ -24,6 +25,11 @@ export default function MainRoutes() {
             <Route exact path="/country" element={<Country />}></Route>
             <Route exact path="/signup" element={<SignUp />}></Route>
             <Route exact path="/login" element={<Login />}></Route>
+            <Route
+              exact
+              path="/freeConsultancy"
+              element={<FreeConsultancy />}
+            ></Route>
           </Routes>
         </Router>
       </StateContext.Provider>
