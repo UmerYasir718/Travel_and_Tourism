@@ -2,7 +2,6 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 export default function CountryContent() {
   const location = useLocation();
-  const CountryData = location.state.countryData;
 
   // const [loading, setLoading] = useState(false);
 
