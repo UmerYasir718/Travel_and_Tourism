@@ -81,7 +81,7 @@ export default function Navbar() {
                 Free Consultancy
               </button>
               <button className="btn navBtn btn-lg">
-                <Link className="text-decoration-none text-light " to="/signup">
+                <Link className="text-decoration-none text-light " to="/login">
                   My Account
                 </Link>
               </button>
