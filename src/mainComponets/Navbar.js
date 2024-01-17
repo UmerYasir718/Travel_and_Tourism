@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="container-fluid">
           <Link className="navbar-brand fs-1" to="/">
             <img
-              src="./LogoDark.png"
+              src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705475272/LogoDark_kbxgw3.png"
               alt="PlatformIntl"
               style={{
                 width: "200px",

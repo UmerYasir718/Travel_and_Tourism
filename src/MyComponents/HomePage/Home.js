@@ -1,6 +1,6 @@
 import React from "react";
-import CarouselOfPapularRoutes from "../../mainComponets/CarouselOfPapularRoutes";
 import LowerFooter from "../../mainComponets/LowerFooter";
+import MostPopularRoutes from "../../mainComponets/MostPopularRoutes";
 import SelectBar from "../../mainComponets/SelectBar";
 import TopDestination from "../../mainComponets/TopDestination";
 import TopVisaDestination from "../../mainComponets/TopVisaDestination";
@@ -16,7 +16,8 @@ export default function Home() {
       <CarouselButtons />
       <Carousel />
       <TopDestination />
-      <CarouselOfPapularRoutes />
+      <MostPopularRoutes />
+      {/* <CarouselOfPapularRoutes /> */}
       <TopVisaDestination />
       <UpperFooter />
       <LowerFooter />

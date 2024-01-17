@@ -5,7 +5,7 @@
 
 /*------------------------------------------ Navbar -------------------------------------*/
 .navbarImg {
-  background-image: url(../public/UpperFooter2.jpg);
+  background-image: url(https://res.cloudinary.com/dckaznwk5/image/upload/v1705475289/UpperFooter2_pxbrdc.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -50,15 +50,15 @@
   align-content: center;
   align-items: center;
   margin: auto;
-  /* background-color: rgb(0, 0, 0, 0.5); */
+  background-color: rgb(0, 0, 0, 0.5);
   border-radius: 10px;
-  /* border: 2px solid white; */
-  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+  border: 2px solid white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .nav-link {
   font-size: 20px;
-  color: black;
+  color: white;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -156,7 +156,8 @@ nav .active {
 
 @media only screen and (max-width: 998px) {
   .SelectSetting {
-    max-width: 80vw;
+    max-width: 85vw;
+    padding: 35px 13px 35px 2px;
   }
 
   .SelectBar {
@@ -243,6 +244,7 @@ nav .active {
   justify-content: space-between;
   align-content: center;
   padding: 0px;
+
 }
 
 .MPRCardSetting img {
@@ -251,11 +253,10 @@ nav .active {
   justify-content: center;
   align-content: center;
   width: 15vw;
-  height: 10rem;
+  height: 11rem;
   border: 2px solid black;
   border-radius: 45px;
-  padding: 10px;
-
+  padding: 25px;
 }
 
 
@@ -266,7 +267,7 @@ nav .active {
     justify-content: center;
     align-content: center;
     width: 20vw;
-    height: 10rem;
+    height: 11rem;
     border: 2px solid black;
     border-radius: 45px;
     padding: 10px;
@@ -284,7 +285,7 @@ nav .active {
     height: 12rem;
     border: 2px solid black;
     border-radius: 45px;
-    padding: 10px;
+    padding: 15px;
   }
 }
 
@@ -294,7 +295,7 @@ nav .active {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    width: 60vw;
+    width: 50vw;
     height: 20vh;
     border: 2px solid black;
     border-radius: 45px;
@@ -306,6 +307,7 @@ nav .active {
 .MPRCard-img {
   border: 2px solid black;
   border-radius: 45px;
+
 }
 
 .Destination {
@@ -343,14 +345,12 @@ nav .active {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  /* width: 40vw; */
-  /* background-color: lightgrey; */
   color: black;
   border-bottom: 2px solid black;
   background-color: rgba(211, 211, 211, 0.5);
   padding: 15px;
   border-radius: 10px;
-  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .title {
@@ -360,6 +360,7 @@ nav .active {
   align-content: center;
   font-weight: bolder;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .smallCardPrice {
@@ -446,7 +447,7 @@ nav .active {
 
 /* -----------------------------------------UpperFooter------------------------------------------------------ */
 .UpperFooter {
-  background: url("../public/UpperFooter.jpg");
+  background: url("https://res.cloudinary.com/dckaznwk5/image/upload/v1705475284/UpperFooter_uarqtb.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -531,12 +532,20 @@ nav .active {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
   margin: auto;
   height: 60vh;
 }
 
 .ApplyCardSetting img {
+  width: 250px;
   height: 300px;
+  padding: 15px;
+}
+
+.ApplyCard-img {
+  border: 3px solid red;
+  border-radius: 10px;
 }
 
 .Method {
@@ -553,6 +562,7 @@ nav .active {
   display: flex;
   justify-content: center;
   align-content: center;
+  align-items: center;
   margin: auto;
   color: black;
 }
@@ -614,55 +624,75 @@ nav .active {
   display: flex;
   justify-content: center;
   align-content: center;
-  border: 2px solid black;
-  border-radius: 15px;
-  margin-bottom: 3px;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+.AirLinesCard:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 /* -----------------------------------------------------BookCard------------------------------------------------- */
 .BookingCard{
   display: flex;
   justify-content: center;
   align-content: center;
-
-  border:2px solid black;
-  border-radius: 15px;
+  border: 2px solid red;
+  border-radius: 25px;
+  height: 300px;
+  width: 350px;
 }
 
 .BookingCard img {
-  height: 350px;
-  width: 250px;
+  height: 300px;
+  width: 300px;
+  padding: 15px;
 }
 
 /* ---------------------------------------------------Login Form-------------------------------------------------------------------- */
 .wrapper {
-  height: 100vh;
+  height: 0px;
 }
 
 .login {
-  width: 400px;
+  width: 600px;
   height: min-content;
+  background-color: rgb(0, 0, 0, 0.7);
   border-radius: 30px;
   border: 2px solid white;
   padding: 20px;
   color: white;
+  position: relative;
+  bottom: 300px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* ------------------------------------------Wrapper Handle from login / Sign Up-------------------------------------------------------- */
 .signUp {
-  width: 400px;
-  height: min-content;
-  border-radius: 30px;
-  border: 2px solid white;
-  padding: 20px;
-  color: white;
-}
-
-/* ------------------------------------------Free Consultacny----------------------------------------------------------- */
-.freeConsultuncy {
   width: 600px;
   height: min-content;
   border-radius: 30px;
   border: 2px solid white;
   padding: 20px;
   color: white;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: relative;
+  bottom: 320px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* ------------------------------------------Free Consultacny----------------------------------------------------------- */
+.freeConsultuncy {
+  width: 800px;
+  height: min-content;
+  border-radius: 30px;
+  border: 2px solid white;
+  padding: 20px;
+  color: white;
+  background-color: rgb(0, 0, 0, 0.7);
+  position: relative;
+  bottom: 320px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }

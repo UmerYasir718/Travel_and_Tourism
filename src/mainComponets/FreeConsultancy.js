@@ -1,47 +1,108 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import LowerFooter from "./LowerFooter";
 import Navbar from "./Navbar";
+import UpperFooter from "./UpperFooter";
 export default function FreeConsultancy() {
-  const [Number, setNumber] = useState(" ");
-  const checkNumber = (event) => {
-    setNumber(event.target.value);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [issue, setIssue] = useState("");
+  const handleFirstName = (e) => {
+    setFirstName(e.target.value);
+  };
+  const handleLastName = (e) => {
+    setLastName(e.target.value);
+  };
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+  const handleSubject = (e) => {
+    setSubject(e.target.value);
+  };
+  const handleIssueText = (e) => {
+    setIssue(e.target.value);
+  };
+  const handleData = async () => {
+    if (!firstName || !lastName || !email || !subject || !issue) {
+      toast.error("Please fill in all fields before submitting.");
+      return;
+    }
+    try {
+      const formData = {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        subject: subject,
+        issue: issue,
+      };
+      console.log(formData);
+      const response = await fetch(
+        `https://travelandtourismapis-production.up.railway.app/contact`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to generate content");
+      } else {
+        const json = await response.json();
+        console.log(json);
+        toast.success(json.message);
+      }
+    } catch (error) {
+      console.log(error);
+      toast.error(error.message);
+    }
   };
   return (
     <>
-      <Navbar />
-      <div className="bg-dark">
+      <div className="navbarImg">
+        <Navbar />
+      </div>
+      <div className="mb-3">
         <div className="container wrapper d-flex justify-content-center align-items-center w-100">
           <div className="freeConsultuncy">
-            <h4>Free Consultancy</h4>
+            <h3 className="d-flex justify-content-center align-content-center">
+              Free Consultancy
+            </h3>
             <hr />
-            <div className="need-validation">
-              <div class="row">
-                <div class="col was-validated ">
-                  <label for="exampleInputFirstName" className="form-label">
+            <div className="">
+              <div className="row">
+                <div className="col ">
+                  <label htmlFor="exampleInputFirstName" className="form-label">
                     First Name
                   </label>
                   <input
                     type="text"
                     required
-                    class="form-control"
-                    placeholder="First name"
+                    className="form-control"
                     aria-label="First name"
+                    onChange={handleFirstName}
                   />
                 </div>
-                <div class="col was-validated">
-                  <label for="exampleInputLastName" className="form-label">
+                <div className="col">
+                  <label htmlFor="exampleInputLastName" className="form-label">
                     Last Name
                   </label>
                   <input
                     type="text"
                     required
-                    class="form-control"
-                    placeholder="Last name"
+                    className="form-control"
                     aria-label="Last name"
+                    onChange={handleLastName}
                   />
                 </div>
               </div>
-              <div className="mb-3 my-2 was-validated">
-                <label for="exampleInputEmail1" className="form-label">
+              <div className="my-2">
+                <label htmlFor="exampleInputEmail1" className="form-label">
                   Email address
                 </label>
                 <input
@@ -50,41 +111,46 @@ export default function FreeConsultancy() {
                   required
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
+                  onChange={handleEmail}
                 />
               </div>
-              <div class="input-group mb-3 my-2 was-validated">
-                <span class="input-group-text" id="basic-addon1">
-                  <b>+92</b>
-                </span>
+              <div className="my-2">
+                <label htmlFor="exampleInputSubject" className="form-label">
+                  Subject
+                </label>
                 <input
-                  type="number"
+                  type="text"
                   required
-                  class="form-control"
-                  placeholder="Enter your contact Number"
-                  aria-label="Username"
-                  aria-describedby="basic-addon1"
-                  onChange={checkNumber}
+                  className="form-control"
+                  aria-label="Last name"
+                  onChange={handleSubject}
                 />
               </div>
-              <div className="checkNumber text-danger">
-                {Number.length !== 10 ? <p> Please enter valid number</p> : " "}
-              </div>
-              <div class="mb-3">
+              <div className="mb-3">
+                <label htmlFor="" className="form-label">
+                  Explain Your Issue
+                </label>
                 <textarea
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlTextarea1"
-                  placeholder="Enter your message here"
                   required
                   rows="5"
+                  onChange={handleIssueText}
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-primary w-100 my-2">
+              <button
+                type="submit"
+                className="btn btn-primary w-100 my-2"
+                onClick={handleData}
+              >
                 Submit
               </button>
             </div>
           </div>
         </div>
       </div>
+      <UpperFooter />
+      <LowerFooter />
     </>
   );
 }
