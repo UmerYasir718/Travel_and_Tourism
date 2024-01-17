@@ -132,7 +132,7 @@ export default function Navbar() {
                   </li> */}
                 </>
               ) : (
-                <button className="btn navBtn btn-lg">
+                <button className="btn navBtn btn-lg  ">
                   <Link
                     className="text-decoration-none text-light "
                     to="/login"

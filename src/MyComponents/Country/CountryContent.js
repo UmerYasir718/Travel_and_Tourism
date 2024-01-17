@@ -27,30 +27,46 @@ export default function CountryContent() {
   // }, [countryName]);
   return (
     <>
-      <div className="container my-5 ">
+      <div className="container " style={{ marginTop: "150px" }}>
         <h2>{location.state.countryData.country}</h2>
         <p>
           <ul>
             <li>
-              <b>Visa Type:</b> {location.state.countryData.visa_type}
+              <b>Visa Type:</b>{" "}
+              {location.state.countryData.visa_type
+                ? location.state.countryData.visa_type
+                : ""}
             </li>
             <li>
-              <b>Entry Type:</b> {location.state.countryData.entry_type}
+              <b>Entry Type:</b>{" "}
+              {location.state.countryData.entry_type
+                ? location.state.countryData.entry_type
+                : ""}
             </li>
             <li>
               <b>Processing Time:</b>{" "}
-              {location.state.countryData.processing_time}
+              {location.state.countryData.processing_time
+                ? location.state.countryData.processing_time
+                : ""}
             </li>
           </ul>
           {location.state.countryData.country} visa from Pakistan is easy to
           acquire with{" "}
           <b className="text-danger">
-            {location.state.countryData.visa_service_provider}
+            {location.state.countryData.visa_service_provider
+              ? location.state.countryData.visa_service_provider
+              : ""}
           </b>
           . {location.state.countryData.country} visitor visa from Pakistan
-          takes a maximum of {location.state.countryData.processing_time} weeks
-          to process. {location.state.countryData.visa_service_provider} also
-          facilitates {location.state.countryData.country} visas.
+          takes a maximum of{" "}
+          {location.state.countryData.processing_time
+            ? location.state.countryData.processing_time
+            : ""}{" "}
+          weeks to process.{" "}
+          {location.state.countryData.visa_service_provider
+            ? location.state.countryData.visa_service_provider
+            : ""}{" "}
+          also facilitates {location.state.countryData.country} visas.
         </p>
         {/* ---------------------------------------------------Cards section----------------------------------------------------------------- */}
         <div className="card">
@@ -69,11 +85,14 @@ export default function CountryContent() {
                 <ul>
                   <li>
                     {" "}
-                    {location.state.countryData.visa_requirements.passport.requirements.map(
-                      (requirement, index) => (
-                        <li key={index}>{requirement}</li>
-                      )
-                    )}
+                    {location.state.countryData.visa_requirements.passport
+                      .requirements
+                      ? location.state.countryData.visa_requirements.passport.requirements.map(
+                          (requirement, index) => (
+                            <li key={index}>{requirement}</li>
+                          )
+                        )
+                      : ""}
                   </li>
                 </ul>
               </div>
@@ -85,11 +104,14 @@ export default function CountryContent() {
                 <ul>
                   <li>
                     {" "}
-                    {location.state.countryData.visa_requirements.documents_required.map(
-                      (requirement, index) => (
-                        <li key={index}>{requirement}</li>
-                      )
-                    )}
+                    {location.state.countryData.visa_requirements
+                      .documents_required
+                      ? location.state.countryData.visa_requirements.documents_required.map(
+                          (requirement, index) => (
+                            <li key={index}>{requirement}</li>
+                          )
+                        )
+                      : ""}
                   </li>
                 </ul>
               </div>
@@ -104,17 +126,24 @@ export default function CountryContent() {
                 <li>
                   <li>
                     {" "}
-                    {location.state.countryData.photographs.requirements.map(
-                      (requirement, index) => (
-                        <li key={index}>{requirement}</li>
-                      )
-                    )}
+                    {location.state.countryData.photographs.requirements
+                      ? location.state.countryData.photographs.requirements.map(
+                          (requirement, index) => (
+                            <li key={index}>{requirement}</li>
+                          )
+                        )
+                      : ""}
                   </li>
                 </li>
               </ul>
             </p>
             <p>
               <b className="text-primary">3- Additional Documents</b>
+              {/* {location.state.countryData.additional_documents==="NA"
+                ? location.state.countryData.additional_documents.financial_documents.employed.map(
+                    (requirement, index) => <li key={index}>{requirement}</li>
+                  )
+                : ""} */}
               <h4>
                 Financial Documents for {location.state.countryData.country}{" "}
                 Visa from Pakistan
@@ -123,22 +152,27 @@ export default function CountryContent() {
               <ul>
                 <li>
                   {" "}
-                  {location.state.countryData.additional_documents.financial_documents.employed.map(
-                    (requirement, index) => (
-                      <li key={index}>{requirement}</li>
-                    )
-                  )}
+                  {location.state.countryData.additional_documents
+                    ? location.state.countryData.additional_documents.financial_documents.employed.map(
+                        (requirement, index) => (
+                          <li key={index}>{requirement}</li>
+                        )
+                      )
+                    : ""}
                 </li>
               </ul>
               <h5>If a Self-Employed Professional / Businessman </h5>
               <ul>
                 <li>
                   {" "}
-                  {location.state.countryData.additional_documents.financial_documents.self_employed.map(
-                    (requirement, index) => (
-                      <li key={index}>{requirement}</li>
-                    )
-                  )}
+                  {location.state.countryData.additional_documents
+                    .financial_documents.self_employed
+                    ? location.state.countryData.additional_documents.financial_documents.self_employed.map(
+                        (requirement, index) => (
+                          <li key={index}>{requirement}</li>
+                        )
+                      )
+                    : ""}
                 </li>
               </ul>
               <div className="supportingDocument">
@@ -150,11 +184,14 @@ export default function CountryContent() {
                 <ul>
                   <li>
                     {" "}
-                    {location.state.countryData.additional_documents.supporting_documents.employed.map(
-                      (requirement, index) => (
-                        <li key={index}>{requirement}</li>
-                      )
-                    )}
+                    {location.state.countryData.additional_documents
+                      .supporting_documents.employed
+                      ? location.state.countryData.additional_documents.supporting_documents.employed.map(
+                          (requirement, index) => (
+                            <li key={index}>{requirement}</li>
+                          )
+                        )
+                      : ""}
                   </li>
                 </ul>
               </div>
@@ -163,11 +200,14 @@ export default function CountryContent() {
                 <ul>
                   <li>
                     {" "}
-                    {location.state.countryData.additional_documents.supporting_documents.self_employed.map(
-                      (requirement, index) => (
-                        <li key={index}>{requirement}</li>
-                      )
-                    )}
+                    {location.state.countryData.additional_documents
+                      .supporting_documents.self_employed
+                      ? location.state.countryData.additional_documents.supporting_documents.self_employed.map(
+                          (requirement, index) => (
+                            <li key={index}>{requirement}</li>
+                          )
+                        )
+                      : ""}
                   </li>
                 </ul>
               </div>
@@ -176,11 +216,14 @@ export default function CountryContent() {
                 <ul>
                   <li>
                     {" "}
-                    {location.state.countryData.additional_documents.supporting_documents.student.map(
-                      (requirement, index) => (
-                        <li key={index}>{requirement}</li>
-                      )
-                    )}
+                    {location.state.countryData.additional_documents
+                      .supporting_documents.student
+                      ? location.state.countryData.additional_documents.supporting_documents.student.map(
+                          (requirement, index) => (
+                            <li key={index}>{requirement}</li>
+                          )
+                        )
+                      : ""}
                   </li>
                 </ul>
               </div>
@@ -189,11 +232,14 @@ export default function CountryContent() {
                 <ul>
                   <li>
                     {" "}
-                    {location.state.countryData.additional_documents.supporting_documents.retired.map(
-                      (requirement, index) => (
-                        <li key={index}>{requirement}</li>
-                      )
-                    )}
+                    {location.state.countryData.additional_documents
+                      .supporting_documents.retired
+                      ? location.state.countryData.additional_documents.supporting_documents.retired.map(
+                          (requirement, index) => (
+                            <li key={index}>{requirement}</li>
+                          )
+                        )
+                      : ""}
                   </li>
                 </ul>
               </div>
@@ -214,11 +260,13 @@ export default function CountryContent() {
               <ul>
                 <li>
                   {" "}
-                  {location.state.countryData.important_notes.notes.map(
-                    (requirement, index) => (
-                      <li key={index}>{requirement}</li>
-                    )
-                  )}
+                  {location.state.countryData.important_notes.notes
+                    ? location.state.countryData.important_notes.notes.map(
+                        (requirement, index) => (
+                          <li key={index}>{requirement}</li>
+                        )
+                      )
+                    : ""}
                 </li>
               </ul>
             </div>

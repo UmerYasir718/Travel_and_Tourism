@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "./Navbar";
 export default function FreeConsultancy() {
   const [Number, setNumber] = useState(" ");
   const checkNumber = (event) => {
@@ -6,6 +7,7 @@ export default function FreeConsultancy() {
   };
   return (
     <>
+      <Navbar />
       <div className="bg-dark">
         <div className="container wrapper d-flex justify-content-center align-items-center w-100">
           <div className="freeConsultuncy">
