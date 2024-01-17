@@ -38,7 +38,7 @@ export default function VisaCarousel() {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img
-                src="sliderImg1.jpg"
+                src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705475273/sliderImg1_o2roy5.jpg"
                 className="d-block w-100"
                 data-bs-interval="20"
                 alt="..."
@@ -46,7 +46,7 @@ export default function VisaCarousel() {
             </div>
             <div className="carousel-item">
               <img
-                src="sliderImg2.jpg"
+                src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705475275/sliderImg2_sd12vy.jpg"
                 className="d-block w-100"
                 data-bs-interval="10000"
                 alt="..."

@@ -64,7 +64,7 @@ export default function SignUp() {
         <div className="container wrapper d-flex justify-content-center align-items-center w-100">
           <div className="signUp">
             <img
-              src="./LogoDark.png"
+              src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705475272/LogoDark_kbxgw3.png"
               alt="PlatformIntl"
               className="d-flex justify-content-center align-items-center m-auto mb-3"
               style={{

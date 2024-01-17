@@ -5,7 +5,7 @@
 
 /*------------------------------------------ Navbar -------------------------------------*/
 .navbarImg {
-  background-image: url(../public/UpperFooter2.jpg);
+  background-image: url(https://res.cloudinary.com/dckaznwk5/image/upload/v1705475289/UpperFooter2_pxbrdc.jpg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -446,7 +446,7 @@ nav .active {
 
 /* -----------------------------------------UpperFooter------------------------------------------------------ */
 .UpperFooter {
-  background: url("../public/UpperFooter.jpg");
+  background: url("https://res.cloudinary.com/dckaznwk5/image/upload/v1705475284/UpperFooter_uarqtb.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;

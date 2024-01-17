@@ -4,6 +4,7 @@ export default function TopVisaDestination() {
   const navigate = useNavigate();
   // const [countryName, setCountryName] = useState("");
   const [countryData, setCountryData] = useState("");
+  // eslint-disable-next-line no-unused-vars
   const [countryReord, setCountryRecord] = useState("");
   const fetchData = async () => {
     try {
