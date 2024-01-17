@@ -50,15 +50,15 @@
   align-content: center;
   align-items: center;
   margin: auto;
-  background-color: rgb(0, 0, 0, 0.5);
+  /* background-color: rgb(0, 0, 0, 0.5); */
   border-radius: 10px;
-  border: 2px solid white;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  /* border: 2px solid white; */
+  /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
 }
 
 .nav-link {
   font-size: 20px;
-  color: white;
+  color: black;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -82,18 +82,23 @@ nav .active {
   padding: 5px;
 }
 
-.navBtnGroup {
-  background-color: rgb(0, 0, 0, 0.5);
+/*.navBtnGroup {
+   background-color: rgb(0, 0, 0, 0.5);
   border-radius: 10px;
-  border: 2px solid white;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-}
+  border: 2px solid white; 
+ box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; 
+}*/
 
 .navBtn {
   padding: 6px;
   border-radius: 5px;
-  color: white;
+  color: black;
+  background-color: red;
 }
+
+/* .navBtn Link {
+  color: black;
+} */
 
 .navBtn:hover {
   background-color: red;
@@ -627,11 +632,13 @@ nav .active {
   height: 350px;
   width: 250px;
 }
+
 /* ---------------------------------------------------Login Form-------------------------------------------------------------------- */
-.wrapper{
+.wrapper {
   height: 100vh;
 }
-.login{
+
+.login {
   width: 400px;
   height: min-content;
   border-radius: 30px;
@@ -639,8 +646,9 @@ nav .active {
   padding: 20px;
   color: white;
 }
+
 /* ------------------------------------------Wrapper Handle from login / Sign Up-------------------------------------------------------- */
-.signUp{
+.signUp {
   width: 400px;
   height: min-content;
   border-radius: 30px;
@@ -648,8 +656,9 @@ nav .active {
   padding: 20px;
   color: white;
 }
+
 /* ------------------------------------------Free Consultacny----------------------------------------------------------- */
-.freeConsultuncy{
+.freeConsultuncy {
   width: 600px;
   height: min-content;
   border-radius: 30px;

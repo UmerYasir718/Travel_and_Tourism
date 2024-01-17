@@ -4,7 +4,7 @@ export default function TopVisaDestination() {
   const navigate = useNavigate();
   // const [countryName, setCountryName] = useState("");
   const [countryData, setCountryData] = useState("");
-  const [setCountryRecord] = useState("");
+  const [countryReord, setCountryRecord] = useState("");
   const fetchData = async () => {
     try {
       const response = await fetch(
@@ -24,11 +24,13 @@ export default function TopVisaDestination() {
       );
       const json = await response.json();
       setCountryRecord(json);
+      console.log("Before navigate");
       navigate("/country", {
         state: {
           countryData: json,
         },
       });
+      console.log("After navigate");
     } catch (error) {
       console.error("Error fetching data:", error);
     }
