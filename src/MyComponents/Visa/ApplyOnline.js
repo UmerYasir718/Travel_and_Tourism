@@ -41,7 +41,7 @@ export default function ApplyOnline() {
             <div className="float-start" style={{ width: "25rem" }}>
               <figure className="position-relative">
                 <img
-                  src="https://www.yugo.pk/assets/img/home/easy-step1.svg"
+                  src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705838900/easy-step1_l0bicc.svg"
                   alt=""
                   className="card-img-top ApplyCard-img"
                 />
@@ -63,7 +63,7 @@ export default function ApplyOnline() {
             <div className="float-start" style={{ width: "25rem" }}>
               <figure className="position-relative">
                 <img
-                  src="https://www.yugo.pk/assets/img/home/easy-step2.svg"
+                  src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705838898/easy-step2_zkbkvb.svg"
                   alt=""
                   className="card-img-top ApplyCard-img"
                 />
@@ -85,7 +85,7 @@ export default function ApplyOnline() {
             <div className="float-start" style={{ width: "25rem" }}>
               <figure className="position-relative">
                 <img
-                  src="https://www.yugo.pk/assets/img/home/easy-step3.svg"
+                  src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705838898/easy-step3_k0ocf4.svg"
                   alt=""
                   className="card-img-top ApplyCard-img"
                 />
