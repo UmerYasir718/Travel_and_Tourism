@@ -39,19 +39,19 @@ export default function HowToBook() {
         >
           <div className="col-4 col-12 col-sm-12 col-md-6 col-lg-4 BookingCard ">
             <img
-              src="https://yugo.pk/assets/img/home/refund-change.svg"
+              src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705838793/refund-change_i6zokz.svg"
               alt=""
             />
           </div>
           <div className="col-4 col-12 col-sm-12 col-md-6 col-lg-4 BookingCard">
             <img
-              src="https://yugo.pk/assets/img/home/lowest-prices.svg"
+              src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705838791/lowest-prices_fuarwo.svg"
               alt=""
             />
           </div>
           <div className="col-4 col-12 col-sm-12 col-md-6 col-lg-4 BookingCard ">
             <img
-              src="https://yugo.pk/assets/img/home/faster-access.svg"
+              src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705838791/faster-access_v4nznd.svg"
               alt=""
             />
           </div>
