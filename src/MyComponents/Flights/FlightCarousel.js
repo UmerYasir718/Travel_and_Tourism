@@ -4,7 +4,7 @@ export default function FlightCarousel() {
   return (
     <div>
       <div className="container" style={{ position: "relative" }}>
-        <h1>Best Deals</h1>
+        <h1 className="my-3">Best Deals</h1>
         <div
           id="carouselExampleIndicators"
           className="carousel slide my-4 rounded  m-auto d-flex justify-content-center align-content-center"

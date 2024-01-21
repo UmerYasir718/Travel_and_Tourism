@@ -32,23 +32,8 @@ export default function CarouselOfPapularRoutes() {
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={3000}
-          removeArrowOnDeviceType={[
-            "tablet",
-            "mobile",
-            "desktop",
-            "superLargeDesktop",
-          ]}
+          removeArrowOnDeviceType={["tablet", "mobile"]}
         >
-          <MostPopularRoutes />
-          <MostPopularRoutes />
-          <MostPopularRoutes />
-          <MostPopularRoutes />
-          <MostPopularRoutes />
-          <MostPopularRoutes />
-          <MostPopularRoutes />
-          <MostPopularRoutes />
-          <MostPopularRoutes />
-          <MostPopularRoutes />
           <MostPopularRoutes />
         </Carousel>
       </div>

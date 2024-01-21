@@ -14,9 +14,6 @@ export default function Visa() {
       <ApplyOnline />
       <TopDestination />
       <TopVisaDestination />
-      <h1 className="alert alert-danger " style={{ marginTop: "100px" }}>
-        Page Is Under Development
-      </h1>
     </div>
   );
 }

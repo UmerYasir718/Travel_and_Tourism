@@ -3,7 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StateContext from "../mainComponets/StateContext";
+import LowerFooter from "./LowerFooter";
 import Navbar from "./Navbar";
+import UpperFooter from "./UpperFooter";
 export default function Login() {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState("");
@@ -50,9 +52,11 @@ export default function Login() {
   };
   return (
     <>
-      <Navbar />
-      <div className="bg-dark">
-        <div className=" wrapper container d-flex justify-content-center align-items-center w-100 ">
+      <div className="navbarImg">
+        <Navbar />
+      </div>
+      <div className="mb-3">
+        <div className=" wrapper container d-flex justify-content-center align-items-center ">
           <div className="login">
             <img
               src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705475272/LogoDark_kbxgw3.png"
@@ -105,7 +109,9 @@ export default function Login() {
                 </div>
               </div>
               <div className="mb-3">
-                <Link to="/signup">Create a Account</Link>
+                <Link to="/signup" className="text-decoration text-light">
+                  Create a Account ?
+                </Link>
               </div>
               <button
                 type="submit"
@@ -118,6 +124,8 @@ export default function Login() {
           </div>
         </div>
       </div>
+      <UpperFooter />
+      <LowerFooter />
     </>
   );
 }

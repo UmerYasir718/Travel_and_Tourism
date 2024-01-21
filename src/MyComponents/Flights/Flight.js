@@ -1,6 +1,6 @@
 import React from "react";
-import CarouselOfPapularRoutes from "../../mainComponets/CarouselOfPapularRoutes";
 import LowerFooter from "../../mainComponets/LowerFooter";
+import MostPopularRoutes from "../../mainComponets/MostPopularRoutes";
 import UpperFooter from "../../mainComponets/UpperFooter";
 import FlightCarousel from "./FlightCarousel";
 import NavFlight from "./NavFlight";
@@ -10,7 +10,7 @@ export default function Flight() {
     <div>
       <NavFlight />
       <FlightCarousel />
-      <CarouselOfPapularRoutes />
+      <MostPopularRoutes />
       <PopularAirlines />
       <UpperFooter />
       <LowerFooter />

@@ -4,7 +4,7 @@ import Country from "../MyComponents/Country/Country";
 import Flight from "../MyComponents/Flights/Flight";
 import Home from "../MyComponents/HomePage/Home";
 import Offers from "../MyComponents/Offers/Offers";
-import Packages from "../MyComponents/Packages/Packages";
+import Packages from "../MyComponents/PackagesPage/Packages";
 import Visa from "../MyComponents/Visa/Visa";
 import FreeConsultancy from "./FreeConsultancy";
 import Login from "./Login";

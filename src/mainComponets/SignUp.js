@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import LowerFooter from "./LowerFooter";
 import Navbar from "./Navbar";
+import UpperFooter from "./UpperFooter";
 export default function SignUp() {
   const navigate = useNavigate();
   const [userName, setUserName] = useState("");
@@ -59,8 +61,10 @@ export default function SignUp() {
   };
   return (
     <>
-      <Navbar />
-      <div className="bg-dark">
+      <div className="navbarImg">
+        <Navbar />
+      </div>
+      <div className="mb-3">
         <div className="container wrapper d-flex justify-content-center align-items-center w-100">
           <div className="signUp">
             <img
@@ -137,7 +141,9 @@ export default function SignUp() {
                 />
               </div>
               <div className="mb-3">
-                <Link to="/login">Already have a Account</Link>
+                <Link to="/login" className="text-decoration text-light">
+                  Already have a Account
+                </Link>
               </div>
               <button
                 type="submit"
@@ -150,6 +156,8 @@ export default function SignUp() {
           </div>
         </div>
       </div>
+      <UpperFooter />
+      <LowerFooter />
     </>
   );
 }

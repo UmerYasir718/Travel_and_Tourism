@@ -33,19 +33,19 @@ export default function CountryContent() {
           <ul>
             <li>
               <b>Visa Type:</b>{" "}
-              {location.state.countryData.visa_type
+              {location.state.countryData?.visa_type
                 ? location.state.countryData.visa_type
                 : ""}
             </li>
             <li>
               <b>Entry Type:</b>{" "}
-              {location.state.countryData.entry_type
+              {location.state.countryData?.entry_type
                 ? location.state.countryData.entry_type
                 : ""}
             </li>
             <li>
               <b>Processing Time:</b>{" "}
-              {location.state.countryData.processing_time
+              {location.state.countryData?.processing_time
                 ? location.state.countryData.processing_time
                 : ""}
             </li>
@@ -53,17 +53,17 @@ export default function CountryContent() {
           {location.state.countryData.country} visa from Pakistan is easy to
           acquire with{" "}
           <b className="text-danger">
-            {location.state.countryData.visa_service_provider
+            {location.state.countryData?.visa_service_provider
               ? location.state.countryData.visa_service_provider
               : ""}
           </b>
           . {location.state.countryData.country} visitor visa from Pakistan
           takes a maximum of{" "}
-          {location.state.countryData.processing_time
+          {location.state.countryData?.processing_time
             ? location.state.countryData.processing_time
             : ""}{" "}
           weeks to process.{" "}
-          {location.state.countryData.visa_service_provider
+          {location.state.countryData?.visa_service_provider
             ? location.state.countryData.visa_service_provider
             : ""}{" "}
           also facilitates {location.state.countryData.country} visas.
@@ -83,17 +83,15 @@ export default function CountryContent() {
               <div className="pasport">
                 <h5 className="my-4">Passport:</h5>
                 <ul>
-                  <li>
-                    {" "}
-                    {location.state.countryData.visa_requirements.passport
-                      .requirements
-                      ? location.state.countryData.visa_requirements.passport.requirements.map(
-                          (requirement, index) => (
-                            <li key={index}>{requirement}</li>
-                          )
-                        )
-                      : ""}
-                  </li>
+                  {" "}
+                  {location.state.countryData?.visa_requirements?.passport
+                    ?.requirements ? (
+                    location.state.countryData.visa_requirements.passport.requirements.map(
+                      (requirement, index) => <li key={index}>{requirement}</li>
+                    )
+                  ) : (
+                    <li>N/A</li>
+                  )}
                 </ul>
               </div>
               <div className="requireDocument">
@@ -102,78 +100,91 @@ export default function CountryContent() {
                   Visa from Pakistan
                 </h5>
                 <ul>
-                  <li>
-                    {" "}
-                    {location.state.countryData.visa_requirements
-                      .documents_required
-                      ? location.state.countryData.visa_requirements.documents_required.map(
-                          (requirement, index) => (
-                            <li key={index}>{requirement}</li>
-                          )
-                        )
-                      : ""}
-                  </li>
+                  {" "}
+                  {location.state.countryData?.visa_requirements
+                    ?.documents_required ? (
+                    location.state.countryData.visa_requirements.documents_required.map(
+                      (requirement, index) => <li key={index}>{requirement}</li>
+                    )
+                  ) : (
+                    <li>N/A</li>
+                  )}
                 </ul>
               </div>
             </p>
             <p>
-              <b className="text-primary">2- Photographs:</b>
-              <h5>
-                Photographs for {location.state.countryData.country} Visa from
-                Pakistan
-              </h5>
+              {location.state.countryData?.additional_documents ? (
+                <b className="text-primary">2- Photographs:</b>
+              ) : (
+                <b className="text-primary"></b>
+              )}
+
+              {location.state.countryData?.additional_documents ? (
+                <h5>
+                  {" "}
+                  Photographs for {location.state.countryData.country} Visa from
+                  Pakistan{" "}
+                </h5>
+              ) : (
+                <b className="text-primary"></b>
+              )}
+
               <ul>
-                <li>
-                  <li>
-                    {" "}
-                    {location.state.countryData.photographs.requirements
-                      ? location.state.countryData.photographs.requirements.map(
-                          (requirement, index) => (
-                            <li key={index}>{requirement}</li>
-                          )
-                        )
-                      : ""}
-                  </li>
-                </li>
+                {" "}
+                {location.state.countryData?.photographs?.requirements ? (
+                  location.state.countryData.photographs.requirements.map(
+                    (requirement, index) => <li key={index}>{requirement}</li>
+                  )
+                ) : (
+                  <li>N/A</li>
+                )}
               </ul>
             </p>
             <p>
-              <b className="text-primary">3- Additional Documents</b>
-              {/* {location.state.countryData.additional_documents==="NA"
-                ? location.state.countryData.additional_documents.financial_documents.employed.map(
+              {" "}
+              {location.state.countryData?.additional_documents ? (
+                <b className="text-primary">3- Additional Documents</b>
+              ) : (
+                <b className="text-primary"></b>
+              )}{" "}
+              {location.state.countryData?.additional_documents ? (
+                <h4>
+                  Financial Documents for {location.state.countryData.country}{" "}
+                  Visa from Pakistan
+                </h4>
+              ) : (
+                <b></b>
+              )}{" "}
+              {location.state.countryData?.additional_documents ? (
+                <h5> If Employed:</h5>
+              ) : (
+                <b></b>
+              )}
+              <ul>
+                {" "}
+                {location.state.countryData?.additional_documents ? (
+                  location.state.countryData.additional_documents.financial_documents.employed.map(
                     (requirement, index) => <li key={index}>{requirement}</li>
                   )
-                : ""} */}
-              <h4>
-                Financial Documents for {location.state.countryData.country}{" "}
-                Visa from Pakistan
-              </h4>
-              <h5>If Employed: </h5>
-              <ul>
-                <li>
-                  {" "}
-                  {location.state.countryData.additional_documents
-                    ? location.state.countryData.additional_documents.financial_documents.employed.map(
-                        (requirement, index) => (
-                          <li key={index}>{requirement}</li>
-                        )
-                      )
-                    : ""}
-                </li>
+                ) : (
+                  <li>N/A</li>
+                )}
               </ul>
-              <h5>If a Self-Employed Professional / Businessman </h5>
+              {location.state.countryData?.additional_documents ? (
+                <h5>If a Self-Employed Professional / Businessman </h5>
+              ) : (
+                <b></b>
+              )}
               <ul>
-                <li>
-                  {" "}
-                  {location.state.countryData.additional_documents
-                    .financial_documents.self_employed
-                    ? location.state.countryData.additional_documents.financial_documents.self_employed.map(
-                        (requirement, index) => (
-                          <li key={index}>{requirement}</li>
-                        )
-                      )
-                    : ""}
-                </li>
+                {" "}
+                {location.state.countryData?.additional_documents
+                  ?.financial_documents?.self_employed ? (
+                  location.state.countryData.additional_documents.financial_documents.self_employed.map(
+                    (requirement, index) => <li key={index}>{requirement}</li>
+                  )
+                ) : (
+                  <li>N/A</li>
+                )}
               </ul>
               <div className="supportingDocument">
                 <h4>
@@ -182,65 +193,57 @@ export default function CountryContent() {
                 </h4>
                 <h5>If Employed:</h5>
                 <ul>
-                  <li>
-                    {" "}
-                    {location.state.countryData.additional_documents
-                      .supporting_documents.employed
-                      ? location.state.countryData.additional_documents.supporting_documents.employed.map(
-                          (requirement, index) => (
-                            <li key={index}>{requirement}</li>
-                          )
-                        )
-                      : ""}
-                  </li>
+                  {" "}
+                  {location.state.countryData?.additional_documents
+                    ?.supporting_documents?.employed ? (
+                    location.state.countryData.additional_documents.supporting_documents.employed.map(
+                      (requirement, index) => <li key={index}>{requirement}</li>
+                    )
+                  ) : (
+                    <li>N/A</li>
+                  )}
                 </ul>
               </div>
               <div className="selfEmployed">
                 <h5>If a Self-Employed Professional / Businessman </h5>
                 <ul>
-                  <li>
-                    {" "}
-                    {location.state.countryData.additional_documents
-                      .supporting_documents.self_employed
-                      ? location.state.countryData.additional_documents.supporting_documents.self_employed.map(
-                          (requirement, index) => (
-                            <li key={index}>{requirement}</li>
-                          )
-                        )
-                      : ""}
-                  </li>
+                  {" "}
+                  {location.state.countryData?.additional_documents
+                    ?.supporting_documents?.self_employed ? (
+                    location.state.countryData.additional_documents.supporting_documents.self_employed.map(
+                      (requirement, index) => <li key={index}>{requirement}</li>
+                    )
+                  ) : (
+                    <li>N/A</li>
+                  )}
                 </ul>
               </div>
               <div className="student">
                 <h5>If Student</h5>
                 <ul>
-                  <li>
-                    {" "}
-                    {location.state.countryData.additional_documents
-                      .supporting_documents.student
-                      ? location.state.countryData.additional_documents.supporting_documents.student.map(
-                          (requirement, index) => (
-                            <li key={index}>{requirement}</li>
-                          )
-                        )
-                      : ""}
-                  </li>
+                  {" "}
+                  {location.state.countryData?.additional_documents
+                    ?.supporting_documents?.student ? (
+                    location.state.countryData.additional_documents.supporting_documents.student.map(
+                      (requirement, index) => <li key={index}>{requirement}</li>
+                    )
+                  ) : (
+                    <li>N/A</li>
+                  )}
                 </ul>
               </div>
               <div className="retired">
                 <h5>If Retired</h5>
                 <ul>
-                  <li>
-                    {" "}
-                    {location.state.countryData.additional_documents
-                      .supporting_documents.retired
-                      ? location.state.countryData.additional_documents.supporting_documents.retired.map(
-                          (requirement, index) => (
-                            <li key={index}>{requirement}</li>
-                          )
-                        )
-                      : ""}
-                  </li>
+                  {" "}
+                  {location.state.countryData?.additional_documents
+                    ?.supporting_documents?.retired ? (
+                    location.state.countryData.additional_documents.supporting_documents.retired.map(
+                      (requirement, index) => <li key={index}>{requirement}</li>
+                    )
+                  ) : (
+                    <li>N/A</li>
+                  )}
                 </ul>
               </div>
             </p>
@@ -258,16 +261,14 @@ export default function CountryContent() {
                 } Visa:{" "}
               </h5>
               <ul>
-                <li>
-                  {" "}
-                  {location.state.countryData.important_notes.notes
-                    ? location.state.countryData.important_notes.notes.map(
-                        (requirement, index) => (
-                          <li key={index}>{requirement}</li>
-                        )
-                      )
-                    : ""}
-                </li>
+                {" "}
+                {location.state.countryData?.important_notes?.notes ? (
+                  location.state.countryData.important_notes.notes.map(
+                    (requirement, index) => <li key={index}>{requirement}</li>
+                  )
+                ) : (
+                  <li>N/A</li>
+                )}
               </ul>
             </div>
           </div>
