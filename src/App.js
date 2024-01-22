@@ -6,7 +6,6 @@ function App() {
       <MainRoutes />
     </>
   );
-  return <></>;
 }
 
 export default App;
