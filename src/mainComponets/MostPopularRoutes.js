@@ -48,9 +48,17 @@ export default function MostPopularRoutes() {
           infinite={true}
           autoPlay={true}
           autoPlaySpeed={3000}
-          removeArrowOnDeviceType={["tablet", "mobile",
+          removeArrowOnDeviceType={[
+            "tablet",
+            "mobile",
             "desktop",
-            "superLargeDesktop"]}
+            "superLargeDesktop",
+          ]}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignContent: "center",
+          }}
         >
           {Array.isArray(routesData) ? (
             routesData.map((routes, index) => (
@@ -60,7 +68,7 @@ export default function MostPopularRoutes() {
                     <img
                       src={routes.image}
                       alt=""
-                      className="card-img-top MPRCard-img"
+                      className="card-img-top MPRCard-img d-flex justify-content-center align-content-center align-items-center"
                     />
                   </figure>
                   <div className="">
