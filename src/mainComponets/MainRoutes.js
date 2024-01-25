@@ -24,7 +24,7 @@ export default function MainRoutes() {
             <Route exact path="/packages" element={<Packages />}></Route>
             <Route exact path="/country" element={<Country />}></Route>
             <Route exact path="/signup" element={<SignUp />}></Route>
-            <Route exact path="/login" element={<Login />}></Route>
+            <Route path="/login" element={<Login />}></Route>
             <Route
               exact
               path="/freeConsultancy"
