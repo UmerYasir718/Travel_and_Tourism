@@ -253,21 +253,22 @@ nav .active {
   justify-content: center;
   align-content: center;
   width: 15vw;
-  height: 11rem;
+  height: 10rem;
   border: 2px solid black;
   border-radius: 45px;
-  padding: 25px;
+  padding: 15px;
 }
 
 
 @media only screen and (max-width: 1198px) {
   .MPRCardSetting img {
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     width: 20vw;
-    height: 11rem;
+    height: 10rem;
     border: 2px solid black;
     border-radius: 45px;
     padding: 10px;
@@ -278,11 +279,12 @@ nav .active {
 @media only screen and (max-width: 992px) {
   .MPRCardSetting img {
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     width: 30vw;
-    height: 12rem;
+    height: 10rem;
     border: 2px solid black;
     border-radius: 45px;
     padding: 15px;
@@ -292,12 +294,13 @@ nav .active {
 @media only screen and (max-width: 650px) {
   .MPRCardSetting img {
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 50vw;
-    height: 20vh;
+    width: 65vw;
+    height: 25vh;
     border: 2px solid black;
     border-radius: 45px;
     padding: 10px;
