@@ -1,4 +1,5 @@
 import React from "react";
+import DowntoTop from "../../mainComponets/DowntoTop";
 import Navbar from "../../mainComponets/Navbar";
 import CountryContent from "./CountryContent";
 import FAQ from "./FAQ";
@@ -19,6 +20,7 @@ export default function Country() {
       /> */}
       <CountryContent />
       <FAQ />
+      <DowntoTop />
     </>
   );
 }

@@ -28,13 +28,11 @@ export default function SelectBar() {
       );
       const json = await response.json();
       setCountryRecord(json);
-      console.log("Before navigate");
       navigate("/country", {
         state: {
           countryData: json,
         },
       });
-      console.log("After navigate");
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -50,7 +48,7 @@ export default function SelectBar() {
           <select
             className="form-select form-select-lg "
             aria-label="Large select example"
-            onChange={handleSelectedCountry}
+            // onChange={handleSelectedCountry}
           >
             <option key="default" defaultValue>
               Select Country
@@ -72,7 +70,7 @@ export default function SelectBar() {
           <button
             type="button"
             className="btn btn-primary btn-lg"
-            onClick={handleCountryRecord(selectedCountry)}
+            // onClick={handleCountryRecord(selectedCountry)}
           >
             Search
           </button>

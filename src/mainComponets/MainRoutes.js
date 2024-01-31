@@ -12,9 +12,12 @@ import SignUp from "./SignUp";
 import StateContext from "./StateContext";
 export default function MainRoutes() {
   const [user, setUser] = useState([]);
+  const [carouselData, setCarouselData] = useState([]);
   return (
     <div>
-      <StateContext.Provider value={{ user, setUser }}>
+      <StateContext.Provider
+        value={{ user, setUser, carouselData, setCarouselData }}
+      >
         <Router basename="/">
           <Routes>
             <Route exact path="/" element={<Home />}></Route>

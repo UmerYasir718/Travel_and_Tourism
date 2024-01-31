@@ -1,4 +1,5 @@
 import React from "react";
+import DowntoTop from "../../mainComponets/DowntoTop";
 import SelectBar from "../../mainComponets/SelectBar";
 import TopDestination from "../../mainComponets/TopDestination";
 import TopVisaDestination from "../../mainComponets/TopVisaDestination";
@@ -14,6 +15,7 @@ export default function Visa() {
       <ApplyOnline />
       <TopDestination />
       <TopVisaDestination />
+      <DowntoTop />
     </div>
   );
 }

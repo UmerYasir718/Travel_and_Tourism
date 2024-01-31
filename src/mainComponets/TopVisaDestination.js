@@ -46,7 +46,7 @@ export default function TopVisaDestination() {
 
         {Array.isArray(countryData) ? (
           countryData.map((country) => (
-            <div className="col-md-6 mb-3">
+            <div className="col-md-6 mb-3" key={country._id}>
               <div className="smallCard">
                 <div className="smallCardTitle">
                   <div
