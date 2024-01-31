@@ -29,7 +29,7 @@ export default function SignUp() {
     if (userPassword === userConfirmPassword) {
       try {
         const response = await fetch(
-          "https://travelandtourismapis-production.up.railway.app/signUp",
+          "https://travel-and-tourism-apis.vercel.app//signUp",
           {
             method: "POST",
             headers: {

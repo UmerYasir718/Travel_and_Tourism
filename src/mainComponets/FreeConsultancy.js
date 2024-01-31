@@ -40,7 +40,7 @@ export default function FreeConsultancy() {
       };
       console.log(formData);
       const response = await fetch(
-        `https://travelandtourismapis-production.up.railway.app/contact`,
+        `https://travel-and-tourism-apis.vercel.app//contact`,
         {
           method: "POST",
           headers: {

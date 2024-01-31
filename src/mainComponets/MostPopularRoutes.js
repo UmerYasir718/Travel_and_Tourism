@@ -6,7 +6,7 @@ export default function MostPopularRoutes() {
   const fetchRoutesData = async () => {
     try {
       const response = await fetch(
-        "https://travelandtourismapis-production.up.railway.app/home/popularRoutes"
+        "https://travel-and-tourism-apis.vercel.app//home/popularRoutes"
       );
       const json = await response.json();
       setRoutesData(json);
@@ -44,8 +44,6 @@ export default function MostPopularRoutes() {
       <div className="container mb-3">
         <h2 className="fw-bold mb-4">Most Popular Routes</h2>
         <div className="container">
-
-
           <Carousel
             responsive={responsive}
             infinite={true}
@@ -57,16 +55,19 @@ export default function MostPopularRoutes() {
               "desktop",
               "superLargeDesktop",
             ]}
-          // style={{
-          //   display: "flex",
-          //   justifyContent: "center",
-          //   alignContent: "center",
-          // }}
+            // style={{
+            //   display: "flex",
+            //   justifyContent: "center",
+            //   alignContent: "center",
+            // }}
           >
             {Array.isArray(routesData) ? (
               routesData.map((routes, index) => (
                 <div className="col-12 col-sm-6 col-md-3 col-lg-3  MPRCardSetting gap-3 ">
-                  <div className="float-start  container" style={{ width: "28rem" }}>
+                  <div
+                    className="float-start  container"
+                    style={{ width: "28rem" }}
+                  >
                     <figure className="position-relative">
                       <img
                         src={routes.image}
@@ -92,7 +93,9 @@ export default function MostPopularRoutes() {
               ))
             ) : (
               <ul>
-                <li className="CountryName list-group-item">No Data Available</li>
+                <li className="CountryName list-group-item">
+                  No Data Available
+                </li>
               </ul>
             )}
             {/* </div> */}

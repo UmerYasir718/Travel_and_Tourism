@@ -22,7 +22,7 @@ export default function Login() {
   const handleLogin = async () => {
     try {
       const response = await fetch(
-        "https://travelandtourismapis-production.up.railway.app/login",
+        "https://travel-and-tourism-apis.vercel.app//login",
         {
           method: "POST",
           headers: {

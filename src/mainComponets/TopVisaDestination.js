@@ -9,7 +9,7 @@ export default function TopVisaDestination() {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://travelandtourismapis-production.up.railway.app/home/countries"
+        "https://travel-and-tourism-apis.vercel.app//home/countries"
       );
       const json = await response.json();
       setCountryData(json);
@@ -21,7 +21,7 @@ export default function TopVisaDestination() {
   const handleCountryRecord = async (countryName) => {
     try {
       const response = await fetch(
-        `https://travelandtourismapis-production.up.railway.app/find/${countryName}`
+        `https://travel-and-tourism-apis.vercel.app//find/${countryName}`
       );
       const json = await response.json();
       setCountryRecord(json);
