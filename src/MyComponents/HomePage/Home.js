@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import DowntoTop from "../../mainComponets/DowntoTop";
 import LowerFooter from "../../mainComponets/LowerFooter";
 import MostPopularRoutes from "../../mainComponets/MostPopularRoutes";
@@ -10,30 +10,6 @@ import Carousel from "./Carousel";
 import CarouselButtons from "./CarouselButtons";
 import NavHome from "./NavHome";
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleScroll = () => {
-    const scrollY = window.scrollY;
-    // You can adjust the scroll threshold as needed
-    const scrollThreshold = 150;
-
-    setIsVisible(scrollY > scrollThreshold);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <div>
       <NavHome />
