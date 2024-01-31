@@ -6,7 +6,7 @@ export default function MostPopularRoutes() {
   const fetchRoutesData = async () => {
     try {
       const response = await fetch(
-        "https://travel-and-tourism-apis.vercel.app//home/popularRoutes"
+        "https://travel-and-tourism-apis.vercel.app/home/popularRoutes"
       );
       const json = await response.json();
       setRoutesData(json);

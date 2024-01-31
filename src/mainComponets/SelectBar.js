@@ -13,7 +13,7 @@ export default function SelectBar() {
   const fetchData = async () => {
     try {
       const response = await fetch(
-        "https://travel-and-tourism-apis.vercel.app//home/countries"
+        "https://travel-and-tourism-apis.vercel.app/home/countries"
       );
       const json = await response.json();
       setCountryData(json);
@@ -24,7 +24,7 @@ export default function SelectBar() {
   const handleCountryRecord = async (selectedCountry) => {
     try {
       const response = await fetch(
-        `https://travel-and-tourism-apis.vercel.app//find/${selectedCountry}`
+        `https://travel-and-tourism-apis.vercel.app/find/${selectedCountry}`
       );
       const json = await response.json();
       setCountryRecord(json);
