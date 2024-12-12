@@ -47,14 +47,16 @@ export default function TopVisaDestination() {
         {Array.isArray(countryData) ? (
           countryData.map((country) => (
             <div className="col-md-6 mb-3" key={country._id}>
-              <div className="smallCard">
+              <div
+                className="smallCard"
+                style={{ cursor: "pointer" }}
+                onClick={() => handleCountryRecord(country.countryName)}
+              >
                 <div className="smallCardTitle">
                   <div
                     className="title"
                     key={country._id}
                     value={country.countryName}
-                    style={{ cursor: "pointer" }}
-                    onClick={() => handleCountryRecord(country.countryName)}
                   >
                     {country.countryName}
                     <br />

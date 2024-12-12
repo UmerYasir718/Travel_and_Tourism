@@ -1,10 +1,30 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import Avatar from "@mui/material/Avatar";
 import "../App.css";
 import StateContext from "./StateContext";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [parsedUserData, setParsedUserData] = useState(null); // State to store parsed user data
+  const navigate = useNavigate();
   const { user } = useContext(StateContext);
+  const userData = localStorage.getItem("userData");
+
+  useEffect(() => {
+    // Parse the stringified userData into an object and update the state
+    if (userData) {
+      const data = JSON.parse(userData);
+      setParsedUserData(data);
+      console.log(data); // You can keep this for debugging
+    } else {
+      setParsedUserData(null);
+      console.log("No user data found.");
+    }
+  }, [userData]); // Runs whenever the `userData` changes
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -21,6 +41,17 @@ export default function Navbar() {
     };
   }, []);
 
+  const handleLogout = () => {
+    // Remove 'userData' from localStorage
+    localStorage.removeItem("userData");
+
+    // Redirect to the login page after logout
+    navigate("/login");
+
+    // Optionally, show a toast notification for successful logout
+    toast.success("Logged out successfully!");
+  };
+
   return (
     <>
       <nav
@@ -35,8 +66,7 @@ export default function Navbar() {
               alt="PlatformIntl"
               style={{
                 width: "200px",
-                height: "70px",
-                backgroundColor: "black",
+                height: "85px",
                 borderRadius: "10px",
               }}
             />
@@ -78,7 +108,7 @@ export default function Navbar() {
               </li>
             </ul>
             <div className="d-flex navBtnGroup">
-              {user.userName ? (
+              {parsedUserData ? (
                 <>
                   <div className="dropdown navBtn">
                     <Link
@@ -86,50 +116,30 @@ export default function Navbar() {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img
-                        src="https://github.com/mdo.png"
-                        alt=""
-                        width="32"
-                        height="32"
-                        className="rounded-circle me-2"
-                      />
-                      <strong>{user.userName}</strong>
+                      {parsedUserData?.userEmail && parsedUserData?.userName ? (
+                        <Avatar
+                          style={{ background: "red" }}
+                          sx={{ width: 35, height: 35 }}
+                        >
+                          {parsedUserData?.userName[0].toUpperCase()}
+                        </Avatar>
+                      ) : (
+                        <Avatar>{}</Avatar>
+                      )}
+                      <strong>{parsedUserData?.userName}</strong>
                     </Link>
                     <ul className="dropdown-menu dropdown-menu-dark text-small shadow">
                       <li>
-                        <Link className="dropdown-item">New project...</Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item">Settings</Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item">Profile</Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" to="/signUp">
+                        <Link
+                          className="dropdown-item"
+                          to="/login"
+                          onClick={handleLogout}
+                        >
                           Sign out
                         </Link>
                       </li>
                     </ul>
                   </div>
-                  {/* <li className="nav-item dropdown">
-                    <Link
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      {user.userName}
-                    </Link>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <Link className="dropdown-item" href="#">
-                          LogOut
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
                 </>
               ) : (
                 <button className="btn navBtn btn-lg  ">

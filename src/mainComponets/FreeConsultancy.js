@@ -64,15 +64,27 @@ export default function FreeConsultancy() {
   };
   return (
     <>
-      <div className="navbarImg">
+      {/* <div className="navbarImg">
         <Navbar />
-      </div>
+      </div> */}
       <div className="mb-3">
         <div className="container wrapper d-flex justify-content-center align-items-center w-100">
           <div className="freeConsultuncy">
-            <h3 className="d-flex justify-content-center align-content-center">
-              Free Consultancy
-            </h3>
+            <div className="d-flex justify-content-start align-content-center flex-column align-items-center ">
+              <img
+                src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705475272/LogoDark_kbxgw3.png"
+                alt="PlatformIntl"
+                className="d-flex justify-content-center align-items-center m-auto mb-3"
+                style={{
+                  width: "200px",
+                  height: "85px",
+                  borderRadius: "10px",
+                }}
+              />
+              <h3 className="d-flex justify-content-center align-items-center mx-auto mb-3">
+                Free Consultancy
+              </h3>
+            </div>
             <hr />
             <div className="">
               <div className="row">
@@ -149,8 +161,8 @@ export default function FreeConsultancy() {
           </div>
         </div>
       </div>
-      <UpperFooter />
-      <LowerFooter />
+      {/* <UpperFooter />
+      <LowerFooter /> */}
     </>
   );
 }

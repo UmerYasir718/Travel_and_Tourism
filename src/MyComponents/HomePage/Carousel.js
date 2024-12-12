@@ -26,7 +26,7 @@ export default function Carousel() {
         id="carouselExampleIndicators"
         className="carousel slide my-4 rounded"
         data-bs-ride="carousel"
-        style={{ position: "relative", bottom: "100px" }}
+        // style={{ position: "relative", bottom: "100px" }}
       >
         <div className="carousel-indicators">
           {homeImages.map((_, index) => (

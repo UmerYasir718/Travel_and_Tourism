@@ -11,7 +11,7 @@ export default function SignUp() {
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
   const [userConfirmPassword, setUserConfirmPassword] = useState("");
-
+  const [loading, setLoading] = useState(false);
   const handleUseName = async (e) => {
     setUserName(e.target.value);
   };
@@ -28,6 +28,7 @@ export default function SignUp() {
     e.preventDefault();
     if (userPassword === userConfirmPassword) {
       try {
+        setLoading(true);
         const response = await fetch(
           "https://travel-and-tourism-apis.vercel.app/signUp",
           {
@@ -54,6 +55,8 @@ export default function SignUp() {
       } catch (error) {
         console.error("Error occurred during login:", error);
         toast.error("Error occurred");
+      } finally {
+        setLoading(false);
       }
     } else {
       toast.error("Both Password must be same");
@@ -61,9 +64,9 @@ export default function SignUp() {
   };
   return (
     <>
-      <div className="navbarImg">
+      {/* <div className="navbarImg">
         <Navbar />
-      </div>
+      </div> */}
       <div className="mb-3">
         <div className="container wrapper d-flex justify-content-center align-items-center w-100">
           <div className="signUp">
@@ -73,8 +76,7 @@ export default function SignUp() {
               className="d-flex justify-content-center align-items-center m-auto mb-3"
               style={{
                 width: "200px",
-                height: "70px",
-                backgroundColor: "white",
+                height: "85px",
                 borderRadius: "10px",
               }}
             />
@@ -149,15 +151,16 @@ export default function SignUp() {
                 type="submit"
                 className="btn btn-primary w-100"
                 onClick={handleData}
+                disabled={loading}
               >
-                SignUp
+                {loading ? "......" : "SignUp"}
               </button>
             </div>
           </div>
         </div>
       </div>
-      <UpperFooter />
-      <LowerFooter />
+      {/* <UpperFooter />
+      <LowerFooter /> */}
     </>
   );
 }

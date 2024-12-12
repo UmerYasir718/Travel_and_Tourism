@@ -10,6 +10,7 @@ export default function Login() {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState("");
   const [userPassword, setUserPassword] = useState("");
+  const [loading, setLoading] = useState(false);
   const { setUser } = useContext(StateContext);
   const handleEmailChange = (e) => {
     setUserEmail(e.target.value);
@@ -21,6 +22,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
+      setLoading(true);
       const response = await fetch(
         "https://travel-and-tourism-apis.vercel.app/login",
         {
@@ -37,6 +39,7 @@ export default function Login() {
       if (data.success) {
         // Login successful, you can handle the success scenario here
         console.log("Login successful:", data);
+        await localStorage.setItem("userData", JSON.stringify(data.user));
         navigate("/");
         toast.success(data.message);
         setUser(data.user);
@@ -48,15 +51,17 @@ export default function Login() {
       }
     } catch (error) {
       console.error("Error occurred during login:", error);
+    } finally {
+      setLoading(false);
     }
   };
   return (
     <>
-      <div className="navbarImg">
+      {/* <div className="navbarImg">
         <Navbar />
-      </div>
+      </div> */}
       <div className="mb-3">
-        <div className=" wrapper container d-flex justify-content-center align-items-center ">
+        <div className="  container d-flex justify-content-center align-items-center ">
           <div className="login">
             <img
               src="https://res.cloudinary.com/dckaznwk5/image/upload/v1705475272/LogoDark_kbxgw3.png"
@@ -64,8 +69,8 @@ export default function Login() {
               className="d-flex justify-content-center align-items-center m-auto mb-3"
               style={{
                 width: "200px",
-                height: "70px",
-                backgroundColor: "white",
+                height: "85px",
+                // backgroundColor: "white",
                 borderRadius: "10px",
               }}
             />
@@ -117,15 +122,16 @@ export default function Login() {
                 type="submit"
                 className="btn btn-primary w-100"
                 onClick={handleLogin}
+                disabled={loading}
               >
-                Login
+                {loading ? "........." : "Login"}
               </button>
             </div>
           </div>
         </div>
       </div>
-      <UpperFooter />
-      <LowerFooter />
+      {/* <UpperFooter />
+      <LowerFooter /> */}
     </>
   );
 }
