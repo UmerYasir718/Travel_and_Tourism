@@ -1,12 +1,11 @@
-import React from 'react'
-import Navbar from '../../mainComponets/Navbar'
+import React from "react";
+import Navbar from "../../mainComponets/Navbar";
 
 export default function NavFlight() {
   return (
     <div>
-       <div className="navbarImg">
-        <Navbar/>
-       </div>
+      <Navbar />
+      <div className="navbarImg"></div>
     </div>
-  )
+  );
 }

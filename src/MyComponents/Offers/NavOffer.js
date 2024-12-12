@@ -3,9 +3,8 @@ import Navbar from "../../mainComponets/Navbar";
 export default function NavOffer() {
   return (
     <div>
-      <div className="navbarImg">
-        <Navbar />
-      </div>
+      <Navbar />
+      <div className="navbarImg"></div>
     </div>
   );
 }
