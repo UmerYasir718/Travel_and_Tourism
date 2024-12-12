@@ -37,7 +37,7 @@ export default function MainRoutes() {
       <StateContext.Provider
         value={{ user, setUser, carouselData, setCarouselData }}
       >
-        {userData.length > 0 ? (
+        {userData?.length > 0 ? (
           <Router basename="/">
             <Routes>
               <Route exact path="/" element={<Home />}></Route>
