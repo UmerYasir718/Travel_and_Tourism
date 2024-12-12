@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import "../App.css";
-import StateContext from "./StateContext";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -10,7 +9,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [parsedUserData, setParsedUserData] = useState(null); // State to store parsed user data
   const navigate = useNavigate();
-  const { user } = useContext(StateContext);
   const userData = localStorage.getItem("userData");
 
   useEffect(() => {

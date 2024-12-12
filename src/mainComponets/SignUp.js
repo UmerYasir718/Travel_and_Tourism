@@ -2,9 +2,6 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import LowerFooter from "./LowerFooter";
-import Navbar from "./Navbar";
-import UpperFooter from "./UpperFooter";
 export default function SignUp() {
   const navigate = useNavigate();
   const [userName, setUserName] = useState("");

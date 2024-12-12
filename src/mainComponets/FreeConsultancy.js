@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import LowerFooter from "./LowerFooter";
-import Navbar from "./Navbar";
-import UpperFooter from "./UpperFooter";
 export default function FreeConsultancy() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");

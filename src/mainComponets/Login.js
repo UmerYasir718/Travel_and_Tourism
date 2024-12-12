@@ -3,9 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import StateContext from "../mainComponets/StateContext";
-import LowerFooter from "./LowerFooter";
-import Navbar from "./Navbar";
-import UpperFooter from "./UpperFooter";
 export default function Login() {
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState("");
