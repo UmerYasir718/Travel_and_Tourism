@@ -6,7 +6,7 @@ export default function VisaCarousel() {
   return (
     <div
       className="container"
-      style={{ position: "relative", bottom: "100px" }}
+      // style={{ position: "relative", bottom: "100px" }}
     >
       <h1>Best Deals</h1>
       <div

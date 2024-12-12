@@ -5,7 +5,7 @@ export default function FlightCarousel() {
   const flightImages = carouselData.filter((item) => item.page === "flight");
 
   return (
-    <div className="container" style={{ position: "relative" }}>
+    <div className="container">
       <h1 className="my-3">Best Deals</h1>
       <div
         id="carouselExampleIndicators"

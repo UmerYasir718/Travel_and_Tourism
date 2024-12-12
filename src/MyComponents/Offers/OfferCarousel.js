@@ -5,7 +5,7 @@ export default function OfferCarousel() {
   const offersImages = carouselData.filter((item) => item.page === "Offers");
 
   return (
-    <div className="container" style={{ position: "relative" }}>
+    <div className="container">
       <h1 className="my-3">Best Deals</h1>
       <div
         id="carouselExampleIndicators"
