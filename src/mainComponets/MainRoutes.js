@@ -59,7 +59,14 @@ export default function MainRoutes() {
           <Router basename="/">
             <Routes>
               <Route path="/login" element={<Login />}></Route>
-              <Route path="*" element={<Navigate to="/login" replace />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
+              <Route exact path="/" element={<Home />}></Route>
+              <Route exact path="/visa" element={<Visa />}></Route>
+              <Route exact path="/flight" element={<Flight />}></Route>
+              <Route exact path="/offers" element={<Offers />}></Route>
+              <Route exact path="/packages" element={<Packages />}></Route>
+              <Route exact path="/country" element={<Country />}></Route>
+              <Route exact path="/signup" element={<SignUp />}></Route>
             </Routes>
           </Router>
         )}
